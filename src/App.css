@@ -1,0 +1,52 @@
+
+
+#hero {
+        min-height: 100vh;
+        color: white;
+        position: relative;
+      }
+
+.highlight-blue {
+  color: #007bff; /* bootstrap blue, or pick your own */
+  font-weight: 600; /* slightly bolder for emphasis */
+}
+
+.lead-on-green {
+  position: relative;
+  display: inline-block; /* shrink to text width */
+  background-color: rgba(255, 255, 255, 0.6); /* white with 60% opacity */
+  padding: 0.5rem 1rem; /* some padding around text */
+  border-radius: 8px; /* smooth corners */
+  color: #064e03; /* dark green text */
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 700px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* subtle shadow on text */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow around the bg */
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: url('/images/northwest-irrigation-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark overlay to improve text visibility */
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  z-index: 0;
+}
+
+.app-container > * {
+  position: relative;
+  z-index: 1; /* Make content appear above overlay */
+}

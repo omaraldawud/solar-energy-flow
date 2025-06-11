@@ -1,0 +1,21 @@
+li {
+  color: #BCBA63; /* sets bullet and text color */
+}
+a {
+  color: #BCBA63;
+  text-decoration: none; /* Optional: remove underline */
+}
+
+a:hover,
+a:focus {
+  color: #A8A54B; /* Slightly darker on hover (optional) */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+a:visited {
+  color: #BCBA63; /* Same as normal if desired */
+}
+
+a:active {
+  color: #8B8935; /* Even darker when active/clicked (optional) */
+}
