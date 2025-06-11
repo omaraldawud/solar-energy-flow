@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             {/* Logo & Contact */}
             <Col md={4} className="mb-3" style={{ marginTop: '-40px' }}>
               <img
-                src="/images/pacific-northwest-irrigation-logo.png"
+                src="images/pacific-northwest-irrigation-logo.png"
                 alt="Pacific Northwest Irrigation Logo"
                 style={{ maxWidth: '180px' }}
                 className="mb-1"

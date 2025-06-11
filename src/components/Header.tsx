@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaMapMarkerAlt, FaClock, FaCommentDots, FaWater, FaPhoneAlt } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
 
 const Header: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="container d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <img
-            src="/images/pacific-northwest-irrigation-logo.png"
+            src="images/pacific-northwest-irrigation-logo.png"
             alt="Pacific Northwest Irrigation Logo"
             className="img-fluid me-3"
             style={{ maxWidth: '200px' }}

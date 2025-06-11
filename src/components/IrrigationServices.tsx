@@ -10,7 +10,7 @@ const IrrigationServices = () => {
       icon: <FaWater size={48} className="text-primary mb-3" />,
       description: "Fixing leaks, broken sprinkler heads, or malfunctioning valves. Seasonal maintenance such as winterization and spring startup, irrigation system inspection/repairs and back-flow services.",
       linkText: "read more >",
-      imageUrl: "/images/irrigation-services.jpg" // Replace with your image URL
+      imageUrl: "images/irrigation-services.jpg" 
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const IrrigationServices = () => {
       icon: <FaWrench size={48} className="text-primary mb-3" />,
       description: "Retrofitting old systems with modern, water-efficient components. Smart controller integration for remote monitoring and management. Inspection & Repairs.",
       linkText: "read more >",
-      imageUrl: "/images/irrigation-services.jpg" // Replace with your image URL
+      imageUrl: "images/irrigation-services.jpg"
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const IrrigationServices = () => {
       icon: <FaShower size={48} className="text-primary mb-3" />,
       description: "Installation and maintenance of drip irrigation systems for precise water delivery to plants, ensuring efficient water use and healthy plant growth.",
       linkText: "read more >",
-      imageUrl: "/images/irrigation-services.jpg" // Replace with your image URL
+      imageUrl: "images/irrigation-services.jpg"
     }
   ];
 

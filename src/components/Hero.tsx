@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                     height="50"
                     className="wp-image-1339"
                     style={{ width: '50px' }}
-                    src="https://hostitwise.net/pnwi/wp-content/uploads/2020/08/leaf.png"
+                    src="images/leaf-irrigation.png"
                     alt=""
                   />
                   <p className="highlight-blue mb-0 ms-3" style={{color:'#BCBA63'}}>
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
 
             <div  className="mt-4  align-items-center " 
                   style={{ 
-                            backgroundImage: "url('/images/watering-garden.jpg')", 
+                            backgroundImage: "url('images/watering-garden.jpg')", 
                             padding: "10px 20px 30px 20px", 
                             borderRadius: "10px", backgroundSize: "cover", backgroundPosition: "center" }}>
                 <img
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                     height="50"
                     className="wp-image-1339"
                     style={{ width: '50px'  }}
-                    src="/images/seeding.png"
+                    src="images/seeding.png"
                     alt="Seeding Icon"
                 />
                 <h2 style={{ margin: '10px 0 35px 0' }}>Transforming Your Outdoor Oasis with Precision</h2>
