@@ -30,3 +30,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist
           server-dir:  /home/tgkizzhb8a76/public_html/hostitwise.com/pnw-react
+	  local-dir: dist
