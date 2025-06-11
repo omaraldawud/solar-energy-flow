@@ -30,3 +30,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /public_html/hostitwise.com/pnw-react/
+      - name: Debug FTP Host
+        run: echo "${{ secrets.FTP_HOST }} / ${{ secrets.FTP_USERNAME }}"
