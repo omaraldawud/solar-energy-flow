@@ -22,6 +22,9 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Debug FTP Host
+        run: echo "${{ secrets.FTP_HOST }} / ${{ secrets.FTP_USERNAME }}"
+
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -30,5 +33,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /public_html/hostitwise.com/pnw-react/
-      - name: Debug FTP Host
-        run: echo "${{ secrets.FTP_HOST }} / ${{ secrets.FTP_USERNAME }}"
