@@ -1,25 +1,25 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet-async";
 import ContactForm from '../components/ContactForm';
-import SiteNavbar from '../components/Navbas';
+import SiteNavbar from '../components/Navbar';
 
 export default function LandingPage() {
   return (
     <>
       {/* Helmet for SEO */}
-          <Helmet>
-            <title>Solar Energy Flow | Efficient Solar Energy Solutions</title>
-            <meta name="description" content="Solar Energy Flow provides efficient and affordable solar energy solutions for homes and businesses. Contact us at 630-008-077 or info@solarenergyflow.net."
-        />
-        <meta name="keywords" content="solar energy, solar panels, renewable energy, solar solutions, solar power" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Solar Energy Flow" />
-      </Helmet>
+    <Helmet>
+      <title>Solar Energy Flow | Efficient Solar Energy Solutions</title>
+      <meta name="description" content="Solar Energy Flow provides efficient and affordable solar energy solutions for homes and businesses. Contact us at 630-008-077 or info@solarenergyflow.net."
+      />
+      <meta name="keywords" content="solar energy, solar panels, renewable energy, solar solutions, solar power" />
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="Solar Energy Flow" />
+    </Helmet>
     <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f7f9fb', minHeight: '100vh' }}>
       {/* Header */}
       <header style={{ backgroundColor: '#FFC107', padding: '20px 0' }}>
         <Container className="d-flex justify-content-between align-items-center">
-          <h1 style={{ margin: 0, color: '#333' }}>Solar Energy Flow</h1>
+          <h1 className='solar-title'>Solar Energy Flow</h1>
           <SiteNavbar />
         </Container>
       </header>

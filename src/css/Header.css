@@ -1,0 +1,45 @@
+.solar-header {
+  background: linear-gradient(90deg, #FFA000 0%, #FFB300 100%);
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.solar-header-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.solar-title {
+  flex: 1;
+  color: #fff;
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.solar-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.solar-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.dropdown-menu a {
+  color: #333;  /* example: dark gray instead of white */
+  font-weight: 500;
+  text-decoration: none;
+}
