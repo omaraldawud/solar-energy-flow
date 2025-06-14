@@ -9,7 +9,7 @@ export default function ContactForm() {
 
 
   useEffect(() => {
-    emailjs.init('user_ko6phmeIKmrDDuO1FzuHG'); // Your EmailJS public key here
+    emailjs.init('user_ko6phmeIKmrDDuO1FzuHG'); //  EmailJS public key
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -34,38 +34,40 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto' }}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-        style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Your email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-        style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
-      />
-      <textarea
-        name="message"
-        placeholder="Your message"
-        value={formData.message}
-        onChange={handleChange}
-        required
-        rows={5}
-        style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
-      />
-      <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#FFC107', border: 'none', cursor: 'pointer' }}>
-        Send
-      </button>
-      {statusMessage && <p style={{ marginTop: '15px' }}>{statusMessage}</p>}
-    </form>
+    <form onSubmit={handleSubmit} className="solar-form">
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    value={formData.name}
+    onChange={handleChange}
+    required
+    className="solar-input"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    value={formData.email}
+    onChange={handleChange}
+    required
+    className="solar-input"
+  />
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    value={formData.message}
+    onChange={handleChange}
+    required
+    rows={5}
+    className="solar-textarea"
+  />
+  <button type="submit" className="solar-button">
+    Send
+  </button>
+  {statusMessage && <p className="solar-status">{statusMessage}</p>}
+</form>
+
+
   );
 }

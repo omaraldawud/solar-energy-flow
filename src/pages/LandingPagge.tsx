@@ -1,17 +1,15 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet-async";
-
 import ContactForm from '../components/ContactForm';
+import SiteNavbar from '../components/Navbas';
 
 export default function LandingPage() {
   return (
     <>
       {/* Helmet for SEO */}
           <Helmet>
-        <title>Solar Energy Flow | Efficient Solar Energy Solutions</title>
-        <meta
-          name="description"
-          content="Solar Energy Flow provides efficient and affordable solar energy solutions for homes and businesses. Contact us at 630-008-077 or info@solarenergyflow.net."
+            <title>Solar Energy Flow | Efficient Solar Energy Solutions</title>
+            <meta name="description" content="Solar Energy Flow provides efficient and affordable solar energy solutions for homes and businesses. Contact us at 630-008-077 or info@solarenergyflow.net."
         />
         <meta name="keywords" content="solar energy, solar panels, renewable energy, solar solutions, solar power" />
         <meta name="robots" content="index, follow" />
@@ -22,11 +20,7 @@ export default function LandingPage() {
       <header style={{ backgroundColor: '#FFC107', padding: '20px 0' }}>
         <Container className="d-flex justify-content-between align-items-center">
           <h1 style={{ margin: 0, color: '#333' }}>Solar Energy Flow</h1>
-          <nav>
-            <a href="#about" style={{ margin: '0 15px', color: '#333', textDecoration: 'none' }}>About</a>
-            <a href="#services" style={{ margin: '0 15px', color: '#333', textDecoration: 'none' }}>Services</a>
-            <a href="#contact" style={{ margin: '0 15px', color: '#333', textDecoration: 'none' }}>Contact</a>
-          </nav>
+          <SiteNavbar />
         </Container>
       </header>
 
@@ -44,7 +38,7 @@ export default function LandingPage() {
           Affordable, Sustainable, and Smart Solar Solutions for Homes & Businesses.
         </p>
         <Button variant="warning" size="lg" href="#contact" style={{ marginTop: '20px' }}>
-          Get a Free Quote
+          view a full list of our solar energy services.
         </Button>
       </Col>
 
@@ -76,7 +70,7 @@ export default function LandingPage() {
         <Container>
           <Row>
             <Col md={6}>
-              <img src="/images/solar-energy-panels.jpg" alt="Solar Panels" style={{ width: '100%', borderRadius: '8px' }} />
+              <img src="/images/solar-energy-panels.jpg" alt="residential solar panel installation by Solar Energy Flow" style={{ width: '100%', borderRadius: '8px' }} />
             </Col>
             <Col md={6}>
               <h3>Why Choose Solar Energy Flow?</h3>

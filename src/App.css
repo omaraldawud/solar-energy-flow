@@ -40,3 +40,64 @@
 .read-the-docs {
   color: #888;
 }
+
+.solar-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fffbea;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px 3px rgba(255, 193, 7, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.solar-input,
+.solar-textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 2px solid #ffca28;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  background-color: #fffdf2;
+}
+
+.solar-input:focus,
+.solar-textarea:focus {
+  outline: none;
+  border-color: #ffc107;
+  box-shadow: 0 0 8px 2px #ffc107aa;
+  background-color: #fffbea;
+}
+
+.solar-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #ffb300;
+  color: #3e2723;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #ffb300cc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solar-button:hover {
+  background-color: #ffc107;
+  box-shadow: 0 6px 12px #ffc107dd;
+}
+
+.solar-status {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #33691e; /* Dark green to symbolize growth and energy */
+  text-align: center;
+  background-color: #e6f4ea;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 1px #a5d6a7aa;
+}
