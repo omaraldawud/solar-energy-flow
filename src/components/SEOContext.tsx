@@ -1,7 +1,8 @@
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext } from "react";
+import type { ReactNode } from "react"; // ✅ Use type-only import
 
 // Define the shape of SEO metadata
-interface SEOData {
+export interface SEOData {
   title: string;
   description: string;
   keywords: string;
