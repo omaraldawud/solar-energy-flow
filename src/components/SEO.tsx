@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useSEO } from "./SEOContext"; // Import context
+import type { SEOData } from "./SEOContext";
+
 
 const SEO = ({ title, description, keywords, image, url }: Partial<SEOData>) => {
   const globalSEO = useSEO(); // Get default SEO values
