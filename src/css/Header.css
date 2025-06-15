@@ -43,3 +43,24 @@
   font-weight: 500;
   text-decoration: none;
 }
+
+.phone-cta {
+  background-color: #F9F871; /* Soft yellow to fit solar theme */
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-link {
+  color: #2C3E50;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #BCBA63; /* Solar accent color */
+}
