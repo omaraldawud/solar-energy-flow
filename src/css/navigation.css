@@ -14,8 +14,7 @@
 
 /* Optional: slight hover effect */
 .custom-dropdown .dropdown-item:hover {
-  background-color: #495057;
-  color: #fff;
+  background-color: #f7e8b7; /* lighter solar yellow on hover */
 }
 
 /* Prevent nav from wrapping */
