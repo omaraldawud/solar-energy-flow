@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Residential Solar Installation",
+    "icon": "FaHome",
+    "description": "Turnkey solar solutions for homeowners with premium panels, battery storage options, and smart energy monitoring.",
+    "linkText": "Explore residential solar - home solutions >",
+    "imageUrl": "/images/solar-panles/solar-panel-installation.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Commercial Solar Systems",
+    "icon": "FaBuilding",
+    "description": "Custom-designed solar arrays for businesses to reduce operational costs and meet sustainability goals.",
+    "linkText": "See business solar energy benefits >",
+    "imageUrl": "/images/solar-panles/commercial-solar-installation.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Solar Maintenance Plans",
+    "icon": "FaTools",
+    "description": "Proactive cleaning, performance checks, and repairs to maximize your system's efficiency and lifespan.",
+    "linkText": "View energy maintenance packages >",
+    "imageUrl": "/images/solar-panles/solar-maintenance.jpg"
+  }
+]

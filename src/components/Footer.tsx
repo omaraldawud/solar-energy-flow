@@ -50,13 +50,7 @@ const Footer: React.FC = () => {
     <>
       <footer style={{ 
         backgroundColor: '#161D21',
-        width: '100vw',
-        position: 'relative',
-        left: '50%',
-        right: '50%',
-        marginLeft: '-50vw',
-        marginRight: '-50vw'
-      }} className="text-white py-5 mt-5">
+      }} className="bg-dark text-white py-5 mt-5">
         <Container>
           <Row>
             {/* Logo & Contact */}
