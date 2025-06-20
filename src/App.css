@@ -1,26 +1,6 @@
 /* Reset Bootstrap's default gutters */
-.row {
-  --bs-gutter-x: 0;
-}
-
-/* Ensure full width for containers */
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/* Fix for potential body overflow */
-body {
-  overflow-x: hidden;
-}
 
 
-
-#hero {
-        min-height: 100vh;
-        color: white;
-        position: relative;
-      }
 
 .highlight-blue {
   color: #007bff; /* bootstrap blue, or pick your own */
@@ -43,12 +23,8 @@ body {
 }
 
 .app-container {
-   
   background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
 }
 
 .app-container::before {
@@ -91,17 +67,7 @@ body {
   
 }
 
-/* Unique styles */
-.compute-card {
-  /* compute-card specific styles */
-  width: 40%x;
-  text-align: center;
-}
 
-.contact-card {
-  /* contact-card specific styles */
-    width: 60%;
-}
 
 .particles {
   position: absolute;

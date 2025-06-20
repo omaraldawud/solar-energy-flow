@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import FooterContactInfo from './FooterContactInfo';
 import { FaPhone } from 'react-icons/fa';
-import { COMPANY_NAME, COMPANY_PHONE } from '../constants';
+import { COMPANY_NAME, COMPANY_PHONE } from '../data/constants';
 
 /* */
 const navLinksMain = [
@@ -48,22 +48,25 @@ const navEmergingSolarProdcuts = [
 const Footer: React.FC = () => {
   return (
     <>
-      <footer style={{ 
-        backgroundColor: '#161D21',
-      }} className="bg-dark text-white py-5 mt-5">
+      <footer 
+        style={{backgroundColor: '#212529',}} 
+        className="text-white py-5 mt-5">
         <Container>
           <Row>
             {/* Logo & Contact */}
             <Col md={4} className="mb-3" style={{ marginTop: '-40px' }}>
               <img
-                src="https://solarenergyflow.net/images/solar-energy-flow-tr.png"
+                src="/images/solar-energy-flow-tr.png"
                 alt="Solar Energy Flow Logo"
                 style={{ maxWidth: '180px' }}
                 className="mb-1"
               />
-              <p>Chicago, Illinois</p>
+              <p>Chicago, Illinois. USA. </p>
               <FaPhone size={28} className="me-3" color='#E3E1A9'/>
-              {COMPANY_PHONE}
+              <a 
+                className="text-white text-decoration-none" 
+                href="tel:{COMPANY_PHONE}">{COMPANY_PHONE}
+              </a>
               <p className="mt-3" style={{ color: '#D6D492' }}>
                 At {COMPANY_NAME}, we provide expert solar panel installation...
               </p>

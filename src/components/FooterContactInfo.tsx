@@ -1,6 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Clock, Phone, Mail } from 'lucide-react';
-import { COMPANY_EMAIL, COMPANY_NAME, COMPANY_PHONE, COMPANY_HOURS } from '../constants';
+import { COMPANY_EMAIL, COMPANY_NAME, COMPANY_PHONE, COMPANY_HOURS } from '../data/constants';
 
 
 const FooterContactInfo = () => {
@@ -28,7 +28,7 @@ const FooterContactInfo = () => {
     <div className="flex items-center space-x-2 my-8">
         <Mail className="w-5 h-5" aria-hidden="true" />
         <span style={{ marginLeft: '15px'  }}>
-            <a className="text-white text-decoration-none" href="mailto:info@pnwirrigation.com">
+            <a className="text-white text-decoration-none" href="mailto:info@solarenergyflow.net">
                 {COMPANY_EMAIL}
             </a>
         </span>

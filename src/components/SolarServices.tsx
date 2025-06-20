@@ -1,20 +1,20 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { FaHome, FaBuilding, FaTools } from "react-icons/fa";
-import { CompanyConfig } from "../constants";
-import services from '../data/services.json';
+import { CompanyConfig } from "../data/constants";
+import solarServicesData from '../data/solarServicesData';
 
-const iconMap = {
+const iconMap: Record<string, JSX.Element> = {
   FaHome: <FaHome size={48} className="text-primary mb-3" />,
   FaBuilding: <FaBuilding size={48} className="text-primary mb-3" />,
-  FaTools: <FaTools size={48} className="text-primary mb-3" />
+  FaTools: <FaTools size={48} className="text-primary mb-3" />,
 };
 
 const SolarServices = () => {
   return (
     <div className="container my-5">
       <Row>
-        {services.map((service) => (
+        {solarServicesData.map((service) => (
           <Col key={service.id} md={4} className="mb-4">
             <Card className="h-100 border-0 shadow-sm">
               {/* Image at the top of the card */}
