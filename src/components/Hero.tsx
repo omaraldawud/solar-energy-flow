@@ -1,27 +1,48 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
-const HeroHome: React.FC = () => {
+type HeroProps = {
+  title: string;
+  subtitle: string;
+  description: string;
+  imageUrl?: string; // Optional hero image
+  formTitle?: string;
+  ctaButtonText?: string;
+};
+
+const Hero: React.FC<HeroProps> = ({
+  title,
+  subtitle,
+  description,
+  imageUrl,
+  formTitle = 'Get a Free Quote',
+  ctaButtonText = 'Request Quote',
+}) => {
   return (
-    <section className="bg-light py-5">
+    <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
       <Container>
         <Row className="align-items-center">
           {/* Left Side: Hero Text */}
           <Col md={6} className="mb-4 mb-md-0">
-            <h1 className="display-5 fw-bold">Power Your Future with Solar Energy</h1>
-            <p className="lead mt-3">
-              Join the clean energy revolution with Solar Energy Flow. Lower your bills,
-              reduce your carbon footprint, and invest in a sustainable future.
-            </p>
-            <p>
-              Contact us today to learn how solar can benefit your home or business.
-            </p>
+            <h1 className="display-5 fw-bold">{title}</h1>
+            <p className="lead mt-3">{subtitle}</p>
+            <p>{description}</p>
+            {imageUrl && (
+              <div className="mt-4">
+                <img
+                  src={imageUrl}
+                  alt="Hero Illustration"
+                  className="img-fluid rounded shadow-sm"
+                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                />
+              </div>
+            )}
           </Col>
 
           {/* Right Side: Simple CTA Form */}
           <Col md={6}>
             <div className="p-4 bg-white shadow rounded">
-              <h2 className="h5 mb-4 text-center">Get a Free Quote</h2>
+              <h2 className="h5 mb-4 text-center">{formTitle}</h2>
               <Form>
                 <Form.Group className="mb-3" controlId="formName">
                   <Form.Label>Name</Form.Label>
@@ -40,7 +61,7 @@ const HeroHome: React.FC = () => {
 
                 <div className="d-grid">
                   <Button variant="primary" type="submit">
-                    Request Quote
+                    {ctaButtonText}
                   </Button>
                 </div>
               </Form>
@@ -52,4 +73,4 @@ const HeroHome: React.FC = () => {
   );
 };
 
-export default HeroHome;
+export default Hero;
