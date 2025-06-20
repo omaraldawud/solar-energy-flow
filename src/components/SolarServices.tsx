@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { FaHome, FaBuilding, FaTools } from "react-icons/fa";
-import { COMPANY_NAME, CompanyConfig } from '../constants';
+import { CompanyConfig } from "../constants";
 
 const SolarServices = () => {
   const services = [
