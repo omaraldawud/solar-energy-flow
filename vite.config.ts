@@ -4,25 +4,27 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: 'automatic',
-      babel: { plugins: [] },
+      jsxRuntime: 'automatic', // Ensures proper TSX handling
+      babel: {
+        plugins: [], // Add any needed babel plugins here
+      },
     }),
   ],
   server: {
     port: 5173,
     strictPort: true,
-    open: true,
+    open: true, // Automatically open browser
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Prioritize TS files
   },
   esbuild: {
-    loader: 'tsx',
+    loader: 'tsx', // Force TSX processing
   },
   assetsInclude: ['**/*.avif'],
   build: {
-    outDir: 'dist', // 👈 build output directory
-    sourcemap: true, // optional: generate source maps for debugging
+    outDir: 'dist', // Build output directory
+    sourcemap: true, // Optional: generate source maps for easier debugging
   },
-  base: './', // ensures relative paths (important for FTP deploy like GoDaddy)
+  base: './', // Ensures relative paths for FTP deployment (like GoDaddy)
 });
