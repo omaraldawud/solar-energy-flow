@@ -2,9 +2,9 @@ import './App.css';
 import seoData from "./data/seoData";
 import SEO from "./components/seo-components/SEO";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/HeaderTop";
 import HeaderTop from "./components/HeaderTop";
-import Hero from "./components/Hero";
+import Hero from "./components/HeroHome";
 import HeroHome from './components/HeroHome';
 
 
