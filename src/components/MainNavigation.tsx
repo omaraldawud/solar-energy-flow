@@ -7,10 +7,10 @@ const MainNavigation: React.FC = () => {
     <Navbar expand="md" bg="dark" variant="dark" className="py-3" collapseOnSelect>
       <Container>
         {/* Optional: You can add a brand/logo here */}
-        {/* <Navbar.Brand href="#home" className="text-warning fw-bold">Solar Energy Flow</Navbar.Brand> */}
+      
 
         {/* Hamburger icon */}
-        <Navbar.Toggle aria-controls="main-navbar-nav" />
+        <Navbar.Toggle aria-controls="main-navbar-nav" className="ms-auto" />
 
         {/* Collapsible menu */}
         <Navbar.Collapse id="main-navbar-nav">
