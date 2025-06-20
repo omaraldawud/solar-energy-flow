@@ -1,89 +1,91 @@
 import React from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
-import { FaPhone, FaMapMarkerAlt, FaClock, FaCommentDots, FaWater, FaPhoneAlt } from 'react-icons/fa';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaCommentDots, FaClock, FaPhoneAlt } from 'react-icons/fa';
 import ContactForm from './ContactForm';
 import WhyChooseUs from './WhyChooseUs';
-import IrrigationServices from './IrrigationServices';
+import SolarServices from './SolarServices';
 
 const Hero: React.FC = () => {
   return (
-    <section
-      id="hero"
-
-    >
-      <div className="container py-5">
-        <Row>
+    <section id="hero" className="overflow-hidden">
+      <div className="container-fluid px-md-5 px-3 py-5">
+        <Row className="mx-0">
           {/* Left Content */}
-          <Col md={6} className="d-flex flex-column justify-content-start">
-            <div className="mb-4 flex align-items-center">
-              <div className="mb-4 d-flex align-items-center">
-                  <img
-                    decoding="async"
-                    width="50"
-                    height="50"
-                    className="wp-image-1339"
-                    style={{ width: '50px' }}
-                    src="images/leaf-irrigation.png"
-                    alt=""
-                  />
-                  <p className="highlight-blue mb-0 ms-3" style={{color:'#BCBA63'}}>
-                    A Garden Like Never Before
-                  </p>
-              </div>
+          <Col md={6} className="py-5 p-0">
+            {/* ... your left content ... */}
+            <div className="mb-4 d-flex align-items-center">
+              <img
+                decoding="async"
+                width="50"
+                height="50"
+                src="images/leaf-irrigation.png"
+                alt=""
+              />
+              <p className="mb-0 ms-3" style={{ color: '#BCBA63' }}>
+                Solar power: Clean, renewable energy for a sustainable future
+              </p>
             </div>
-            <h2 className="fw-bold" style={{ fontSize: '4rem', fontWeight: 700 }}>Pacific Northwest Irrigation</h2>
-            <p className="lead mt-3 lead-on-green">
-              <span className="highlight-blue">At Pacific Northwest Irrigation</span>, we specialize in designing,
-              installing, and maintaining efficient, eco-friendly irrigation
-              systems tailored to the unique needs of the Pacific Northwest,
-              backed by years of expertise in sustainable water management.
-            </p>
-
-            <div  className="mt-4  align-items-center " 
-                  style={{ 
-                            backgroundImage: "url('images/watering-garden.jpg')", 
-                            padding: "10px 20px 30px 20px", 
-                            borderRadius: "10px", backgroundSize: "cover", backgroundPosition: "center" }}>
-                <img
-                    decoding="async"
-                    width="50"
-                    height="50"
-                    className="wp-image-1339"
-                    style={{ width: '50px'  }}
-                    src="images/seeding.png"
-                    alt="Seeding Icon"
-                />
-                <h2 style={{ margin: '10px 0 35px 0' }}>Transforming Your Outdoor Oasis with Precision</h2>
-                <p>Expert <a href="/irrigation-services" className="fs-4 fw-bold"   style={{ color: '#007bff', textDecoration: 'none', marginTop: '20px' }}>
-                              irrigation solutions</a> designed to nurture your landscape, conserve resources, and enhance the beauty of your outdoor spaces.</p>
+            <div className="compute-card">
+              <div className="particles"></div>
+              <h2>Solar Panel Installation</h2>
+              <p className="subtitle">
+                At Solar Energy Flow, we deliver <em>state-of-the-art</em>, <em>certified</em> solar panels—engineered for maximum efficiency and <b>approved</b> for sustainable energy excellence.
+              </p>
+              <div className="highlight">Solar Solutions!</div>
+            </div>
+            <div
+              className="mt-4"
+              style={{
+                backgroundImage: "url('images/solar-panles/solar-boards-bg.avif')",
+                padding: "10px 20px 30px 20px",
+                borderRadius: "10px",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <img
+                decoding="async"
+                width="50"
+                height="50"
+                src="images/seeding.png"
+                alt="Seeding Icon"
+              />
+              <h2 style={{ margin: '10px 0 35px 0' }}>
+                Transforming Energy Consumption with Precision Solar Technology
+              </h2>
+              <p>
+                Expert{' '}
+                <a
+                  href="/solar-services"
+                  className="fs-4 fw-bold"
+                  style={{ color: '#007bff', textDecoration: 'none' }}
+                >
+                  solar solutions
+                </a>{' '}
+                Transforming Energy Consumption with Precision Solar Technology
+              </p>
             </div>
           </Col>
-
 
           {/* Right Contact Form */}
-          <Col md={6}>
-            <div className="bg-light bg-opacity-75 text-dark p-4 rounded">
-              <h2 className="text-success mb-4">Contact Us</h2>
+          <Col md={6} className="ps-md-5 ps-0">
+            <div className="contact-card">
+              <h2>Contact Us</h2>
               <ContactForm />
-
-              {/* Extra Info */}
-              <div className="mt-4">
-                <p><FaCommentDots className="me-2 text-danger" />Here’s how you can contact us for any questions or concerns:</p>
-                <p><FaMapMarkerAlt className="me-2 text-primary" />2360 Hood Avenue, San Diego, CA, 92123</p>
-                <p><FaClock className="me-2 text-primary" />08:00 AM – 04:00 PM</p>
-                <p><FaPhoneAlt className="me-2 text-primary" />+1 334 422 2211</p>
+              <div className="mt-2">
+                <p><FaCommentDots className="me-2 text-danger" />Contacts - questions or concerns:</p>
+                <p><FaClock className="me-2 text-primary" />Chicago Office 08:00am – 04:00pm CSD</p>
+                <p><FaPhoneAlt className="me-2 text-primary" />+1 630 800 8077</p>
               </div>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col className="text-center mt-5">
+        
+        {/* WhyChooseUs and SolarServices sections */}
+        <Row className="mx-0">
+          <Col className="mt-5 px-0">
             <WhyChooseUs />
-          </Col>
-        </Row>
-        <Row>
-          <Col className="text-center mt-5">
-            <IrrigationServices />
+            <SolarServices />
           </Col>
         </Row>
       </div>

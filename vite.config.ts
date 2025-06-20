@@ -1,7 +1,26 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/pnw-react/', // 👈 This tells Vite where the app lives
-  plugins: [react()]
+  plugins: [
+    react({
+      jsxRuntime: 'automatic', // Ensures proper TSX handling
+      babel: {
+        plugins: [], // Add any needed babel plugins here
+      },
+    }),
+  ],
+  server: {
+    port: 5173,
+    strictPort: true,
+    open: true, // Automatically open browser
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Prioritize TS files
+  },
+  esbuild: {
+    loader: 'tsx', // Force TSX processing
+  },
+  assetsInclude: ['**/*.avif'],
 });
+

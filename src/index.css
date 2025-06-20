@@ -1,3 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Hover effects for all interactive elements */
+a:hover,
+button:hover,
+.nav-link:hover,
+.hover-effect:hover {
+  color: #BCBA63 !important;
+  transition: color 0.2s ease;
+}
+
+/* Specific component hover controls */
+.nav-item .nav-link:hover {
+  color: #BCBA63 !important;
+}
+
+/* For buttons */
+.btn:hover {
+  border-color: #BCBA63 !important;
+  color: #BCBA63 !important;
+}
+
 li {
   color: #BCBA63; /* sets bullet and text color */
 }

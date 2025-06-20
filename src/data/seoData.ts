@@ -1,12 +1,12 @@
 const seoData = {
   home: {
-    title: "Pacific Northwest Irrigation | Sprinkler & Irrigation Experts",
-    description: "Professional irrigation design and maintenance services in the Pacific Northwest. Trusted experts in sprinkler systems, garden design, and water features.",
-    keywords: "Irrigation, Sprinkler Systems, Garden Design, Pacific Northwest, Installation, Maintenance",
-    ogTitle: "Pacific Northwest Irrigation",
-    ogDescription: "Expert irrigation system services across the Pacific Northwest.",
+    title: "Solar Energy Flow",
+    description: "Efficient solar power solutions for homes and businesses. Harness renewable energy with cutting-edge technology.",
+    keywords: "solar energy, renewable power, solar panels, clean energy, sustainable electricity",
+    ogTitle: "Solar Energy Flow | Sustainable Energy Solutions",
+    ogDescription: "Discover how solar energy can power your future with eco-friendly, cost-efficient technology.",
     ogImage: "/images/pacific-northwest-irrigation-banner.jpg",
-    ogUrl: "https://hostitwise.com/pnw-react/"
+    ogUrl: "https://solarenergyflow.net/images/solar-energy-flow-tr.png"
   },
   services: {
     title: "Irrigation Services | Design, Installation & Repair",
@@ -14,7 +14,7 @@ const seoData = {
     ogTitle: "Irrigation Services",
     ogDescription: "Top-quality irrigation services tailored to your needs.",
     ogImage: "/images/services-banner.jpg",
-    ogUrl: "https://hostitwise.com/pnw-react/services"
+    ogUrl: "https://solarenergyflow.net/services"
   },
   contact: {
     title: "Contact Us | Pacific Northwest Irrigation",
@@ -22,7 +22,7 @@ const seoData = {
     ogTitle: "Contact Pacific Northwest Irrigation",
     ogDescription: "Reach out to our team for expert irrigation advice and services.",
     ogImage: "/images/contact-banner.jpg",
-    ogUrl: "https://hostitwise.com/pnw-react/contact"
+    ogUrl: "solarenergyflow.net/contact"
   }
 };
 
