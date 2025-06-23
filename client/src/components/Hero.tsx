@@ -7,6 +7,7 @@ type HeroProps = {
   subtitle2: string;
   description: string;
   imageUrl?: string; // Optional hero image
+  imageAlt?: string; // Optional hero image ALt tag
   formTitle?: string;
   ctaButtonText?: string;
 };
@@ -17,6 +18,7 @@ const Hero: React.FC<HeroProps> = ({
   subtitle2,
   description,
   imageUrl,
+  imageAlt,
   formTitle = 'Get a Free Quote',
   ctaButtonText = 'Request Quote',
 }) => {
@@ -33,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({
               <div className="mt-4">
                 <img
                   src={imageUrl}
-                  alt="Hero Illustration"
+                  alt={imageAlt}
                   className="img-fluid rounded shadow-sm"
                   style={{ width: '100%', height: '200px', objectFit: 'cover' }}
                 />
