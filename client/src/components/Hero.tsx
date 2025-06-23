@@ -3,7 +3,8 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 type HeroProps = {
   title: string;
-  subtitle: string;
+  subtitle1: string;
+  subtitle2: string;
   description: string;
   imageUrl?: string; // Optional hero image
   formTitle?: string;
@@ -12,7 +13,8 @@ type HeroProps = {
 
 const Hero: React.FC<HeroProps> = ({
   title,
-  subtitle,
+  subtitle1,
+  subtitle2,
   description,
   imageUrl,
   formTitle = 'Get a Free Quote',
@@ -25,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({
           {/* Left Side: Hero Text */}
           <Col md={6} className="mb-4 mb-md-0">
             <h1 className="display-5 fw-bold">{title}</h1>
-            <p className="lead mt-3">{subtitle}</p>
+            <p className="lead mt-3">{subtitle1} {subtitle2}</p>
             <p>{description}</p>
             {imageUrl && (
               <div className="mt-4">

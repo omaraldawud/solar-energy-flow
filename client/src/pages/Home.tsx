@@ -13,9 +13,12 @@ const Home: React.FC = () => {
       <div className="container-fluid p-0">
         <HeaderTop />
         <Hero
-          title="Power Your Future with Solar Energy"
-          subtitle="Clean, renewable, affordable."
-          description="We help you reduce energy costs and build a sustainable future with certified solar solutions."
+          title="Bright Ideas Start with Solar"
+          subtitle1="Smart Energy:"
+          subtitle2="For a Sustainable Future."
+          description="We at Solar Energy Flow, believe in making differnce 
+                        to our plant, one panel at a time.  
+                        Join us as we make our journey toa better tomorrow"
           imageUrl="/images/solar-energy-panels.jpg"
           formTitle="Get Your Free Solar Quote"
           ctaButtonText="Contact Us Now"
