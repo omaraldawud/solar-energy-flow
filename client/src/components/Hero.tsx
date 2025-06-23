@@ -5,7 +5,7 @@ type HeroProps = {
   title: string;
   subtitle1: string;
   subtitle2: string;
-  description: string;
+  description: React.ReactNode;
   imageUrl?: string; // Optional hero image
   imageAlt?: string; // Optional hero image ALt tag
   formTitle?: string;
