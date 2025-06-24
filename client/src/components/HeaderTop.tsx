@@ -38,31 +38,31 @@ const Header: React.FC = () => {
                 href="tel:+16308008077" 
                 className="btn text-dark fw-bold d-flex align-items-center px-4 py-2 hover-grow"
                 style={{
-                  background: 'linear-gradient(135deg, #FFC523 0%, #FFD700 100%)',
+                  background: 'linear-gradient(135deg, #ff8d29 0%, #FFD700 100%)',
                   border: 'none',
                   transition: 'all 0.3s ease',
                   fontSize: '1.1rem',
-                  borderRadius: '8px', // Less pill-like than rounded-pill
-                  letterSpacing: '2px' // Increased letter spacing
+                  borderRadius: '15px 0 15px 0',  
+                  letterSpacing: '2px'  
                 }}
               >
               <div className="phone-icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center me-3" 
                   style={{ 
                     width: '34px', 
                     height: '34px',
-                    transition: 'transform 0.3s ease' 
+                    transition: 'transform 0.3s ease', 
                   }}>
                 <FaPhone size={18} className="text-warning" />
               </div>
               <span className="phone-number" style={{ letterSpacing: '1.2px' }}>
-                +1 (630) 800-8077
+                Join Us in Making <br />a Difference! <br />+1 (630) 800-8077
               </span>
             </a>
           </Col>
 
           {/* Navigation */}
           <Col xs={12} md={4} className="d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
-              <CallToActionBanner />
+             {/* <CallToActionBanner /> */}
               <MainNavigation />
           </Col>
         </Row>
