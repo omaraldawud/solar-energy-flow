@@ -1,0 +1,57 @@
+
+.bg-tealgreen {
+  background-color: #13bba7 !important; /* #13BBA7 Teal Green */
+}
+
+.brand-text {
+  color: #FFC523; /* Yellow - matches flyer title color */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: Make phone CTA button rounded */
+.btn-warning {
+  background-color: #FFC523 !important;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #FF8D29 !important; /* Orange on hover */
+}
+
+/* For Menu */
+.nav-link,
+.custom-dropdown .dropdown-item {
+  font-size: 0.95rem;
+  font-weight: 500; /* or 400 depending on your design */
+  color: #FFFFFF !important;
+}
+
+/* Hover style for main nav links */
+.nav-link:hover,
+.nav-link:focus {
+  color: #FFC523 !important; /* Yellow on hover */
+}
+
+/* for submenu */
+/* Custom Dropdown Menu Styling */
+.custom-dropdown .dropdown-menu {
+  background-color: #316E62; /* Teal Green */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 0;
+}
+
+.custom-dropdown .dropdown-item {
+  font-size: 0.80rem; /* or 0.9rem to make it tighter */
+  padding: 8px 16px; /* Reduce padding to match main nav links */
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus {
+  background-color: #FFC523 !important;
+  color: #000000 !important;
+}

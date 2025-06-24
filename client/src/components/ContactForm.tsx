@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-const ContactForm: React.FC = () => {
+//Ts Type for Props
+interface ContactFormProps {
+  formTitle?: string;
+  ctaButtonText?: string;
+}
+
+// Form take 2 Props: formTitle and ctaButtonText
+//
+const ContactForm: React.FC<ContactFormProps> = ({ 
+  formTitle = "Contact Us", 
+  ctaButtonText = "Submit Form" 
+}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
+
 
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
@@ -90,7 +102,7 @@ const ContactForm: React.FC = () => {
       </Form.Group>
 
       <Button variant="success" type="submit" className="w-100">
-        Submit Form
+        {ctaButtonText}
       </Button>
     </Form>
   );

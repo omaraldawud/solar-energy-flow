@@ -4,7 +4,7 @@ import '../../css/navigation.css';
 
 const MainNavigation: React.FC = () => {
   return (
-    <Navbar expand="md" bg="dark" variant="dark" className="py-3" collapseOnSelect>
+    <Navbar expand="lg"  variant="dark" className="py-1 py-md-3" collapseOnSelect>
       <Container>
         {/* Hamburger icon */}
         <Navbar.Toggle aria-controls="main-navbar-nav" className="ms-auto" />
@@ -13,7 +13,6 @@ const MainNavigation: React.FC = () => {
         <Navbar.Collapse id="main-navbar-nav">
           <Nav className="ms-auto align-items-left">
             <Nav.Link href="#home" className="text-white px-1">Home</Nav.Link>
-
             {/* Solar Services Dropdown */}
             <NavDropdown 
               title="Solar Services" 

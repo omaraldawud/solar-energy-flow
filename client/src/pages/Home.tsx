@@ -20,12 +20,12 @@ const Home: React.FC = () => {
             <>
               We at <strong>Solar Energy Flow</strong>, believe in making differnce 
               to our plant, one panel at a time.  Join us as we make our 
-              journey toa better tomorrow
+              journey to a better tomorrow
             </>
           }
-          imageUrl="/images/solar-energy-panels.jpg"
+          imageUrl="/images/solar-panel/residential-solar-installation.jpg"
           imageAlt='Solar Ideas for Better Planet'
-          formTitle="Get Your Free Solar Quote"
+          formTitle="Want to Learn More? Contact Us"
           ctaButtonText="Contact Us Now"
         />
         <SolarServices />
