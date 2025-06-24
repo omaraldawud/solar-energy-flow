@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import Hero from './Hero';
 import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { FaPhone } from 'react-icons/fa';
-import '../components/Header.css';
+import './Header.css';
 
 const Home: React.FC = () => {
   return (
