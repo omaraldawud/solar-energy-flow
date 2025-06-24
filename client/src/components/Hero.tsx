@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import ContactForm from './ContactForm';
-import CallToActionBanner from './CallToActionBanner';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 type HeroProps = {
@@ -9,8 +8,8 @@ type HeroProps = {
   subtitle1: string;
   subtitle2: string;
   description: React.ReactNode;
-  imageUrl?: string; // Optional hero image
-  imageAlt?: string; // Optional hero image ALt tag
+  imageUrl?: string;
+  imageAlt?: string;
   formTitle?: string;
   ctaButtonText?: string;
 };
@@ -26,108 +25,90 @@ const Hero: React.FC<HeroProps> = ({
   ctaButtonText = 'Request Quote Today',
 }) => {
   return (
-    <section  style={{ backgroundColor: '#316E62', padding: 50 }}>
-      <Container>
-        <Row className="d-flex align-items-end"> {/* Added d-flex to ensure side-by-side layout */}
-          {/* Left Side: Hero Text */}
-          <Col md={8}>
+    <section style={{ backgroundColor: '#316E62' }}>
+      <Container className="py-5">
+        <Row className="g-4 d-flex align-items-stretch">
+          {/* Left Section */}
+          <Col lg={8} sm={12}>
             <h1 className="display-5 fw-bold text-white">{title}</h1>
-            <p  className="lead mt-3" style={{ color: '#FFC523' }}>
-                  {subtitle1} {subtitle2}
+            <p className="lead mt-3" style={{ color: '#FFC523' }}>
+              {subtitle1} {subtitle2}
             </p>
-            <p>{description}</p>
+            <p className="text-white">{description}</p>
+
             {imageUrl && (
-            <div className="position-relative mt-4 rounded overflow-hidden" style={{ height: '400px' }}>
-              {/* Background Image with Dark Overlay */}
-              <div  className="position-absolute w-100 h-100" 
-                    style={{ 
-                      background: `linear-gradient(url(${imageUrl})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
-                    }}>
+              <div
+                className="position-relative rounded overflow-hidden mt-4"
+                style={{ height: 'auto', minHeight: '420px' }}
+              >
+                <div
+                  className="position-absolute w-100 h-100"
+                  style={{
+                    background: `url(${imageUrl}) center/cover no-repeat`,
+                    opacity: 0.2,
+                    zIndex: 1,
+                  }}
+                />
+                <div className="position-relative z-2 d-flex flex-column flex-lg-row gap-4 p-4">
+                  {/* Card 1 */}
+                  <div className="bg-tealgreen p-3 rounded-4 text-white flex-fill">
+                    <h4 className="fw-bold mb-2">Direct Energy</h4>
+                    <p>We source directly from solar manufacturers</p>
+                    <ul className="list-unstyled small">
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-award me-2" /> 25-year Warranty
+                      </li>
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-tachometer-alt me-2" /> 23.5% Efficiency
+                      </li>
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-palette me-2" /> Full Black Aesthetic
+                      </li>
+                      <li className="d-flex align-items-center">
+                        <i className="fas fa-hard-hat me-2" /> Built for Harsh Weather
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Card 2 */}
+                  <div className="bg-tealgreen p-3 rounded-4 text-white flex-fill">
+                    <h4 className="fw-bold mb-2">
+                      <strong className="text-white">FREE</strong> Property Assessment
+                    </h4>
+                    <ul className="list-unstyled small">
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-house me-2" /> Property Address
+                      </li>
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-file-invoice me-2" /> Billing Information
+                      </li>
+                    </ul>
+                    <h5 className="fw-bold mt-3 mb-2">Includes:</h5>
+                    <ul className="list-unstyled small">
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-solar-panel me-2" /> Rooftop System Design
+                      </li>
+                      <li className="mb-2 d-flex align-items-center">
+                        <i className="fas fa-chart-line me-2" /> Savings Report
+                      </li>
+                      <li className="d-flex align-items-center">
+                        <i className="fas fa-file-invoice-dollar me-2" /> Full Project Quote
+                      </li>
+                    </ul>
+                    <Button className="bg-success border-0 mt-2">
+                      Click to See If You Qualify <i className="fas fa-chevron-right ms-2" />
+                    </Button>
+                  </div>
+                </div>
               </div>
-    
-            {/* Text Content - Aligned to Top */}
-            <div className="position-absolute top-0 start-0 w-100 h-100 p-4">
-  {/* Two Column Layout */}
-  <div className="d-flex h-100 gap-4">
- 
-    {/* First Column */}
-    <div className="py-3 px-4 text-center" 
-          style={{  flex: 1, backgroundColor: '#13BBA7', 
-                    border: '2px solid #13BBA7',
-                    borderRadius: '30px'}}>
-
-      <h4 className="fw-bold mb-3">Direct Energy</h4>
-      <p>we source directly from solar manufactrure</p>
-      <ul className="list-unstyled" style={{ fontSize: '0.9rem' }}>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-award me-2"></i> {/* Font Awesome house icon */}
-            25-year Performance Warranty on Panels
-          </li>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-tachometer-alt me-2"></i>
-          23.5% Tier 1 Efficiency Panels
-        </li>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-palette me-2"></i>
-          Full Black Seamless Aesthetic
-        </li>
-        <li className="d-flex align-items-center text-white">
-          <i className="fas fa-hard-hat me-2"></i>
-          Durability Against Extreme Environmental Conditions
-        </li>
-      </ul>
-    </div>
-
-    {/* Second Column */}
-    <div  className="py-3 px-4 text-center" 
-          style={{  flex: 1, backgroundColor: '#13BBA7', 
-                    border: '2px solid #13BBA7',
-                    borderRadius: '30px'}}
-          >
-      <h4 className="fw-bold mb-3"><strong style={{ color: 'white' }}>FREE</strong> Propery Assessment With Just Your:</h4>
-      <ul className="list-unstyled" style={{ fontSize: '0.9rem' }}>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-house me-2 text-white"></i> {/* Font Awesome house icon */}
-          Property Address
-        </li>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-file-invoice me-2 text-white"></i> {/* Font Awesome bill icon */}
-          Your billing information text
-        </li>
-      </ul>
-      <h4 className="fw-bold mb-3">We will Generate a Report with:</h4>
-      <ul className="list-unstyled" style={{ fontSize: '0.9rem' }}>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-solar-panel text-white me-3 mt-1"></i>          Rooftop System Design Model.
-        </li>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-chart-line text-white me-3 mt-1"></i>
-                Finanacial & Environmental Savings Report.
-        </li>
-        <li className="mb-2 d-flex align-items-center text-white">
-          <i className="fas fa-file-invoice-dollar text-white me-3 mt-1"></i>          Full Project Quote.
-        </li>
-      </ul>
-      <Button className="bg-success border-0 d-flex align-items-center justify-content-center gap-2">
-        Click to see if you qualify
-        <span className="d-inline-flex">
-          <i className="fas fa-chevron-right"></i>
-        </span>
-      </Button>
-      </div>
-    </div>
-  </div>
-          </div>
-        )}
+            )}
           </Col>
 
-          {/* Right Side: Simple CTA Form */}
-          <Col md={4}>              
-              <div className="p-4 bg-white shadow rounded">
+          {/* Right Section: Form */}
+          <Col lg={4} sm={12}>
+            <div className="p-4 bg-white shadow rounded h-100 d-flex flex-column justify-content-center">
               <h3 className="h5 mb-4 text-center">{formTitle}</h3>
-                <ContactForm ctaButtonText={ctaButtonText} />
+              <ContactForm ctaButtonText={ctaButtonText} />
             </div>
           </Col>
         </Row>

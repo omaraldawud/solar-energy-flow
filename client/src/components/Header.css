@@ -3,6 +3,7 @@
   background-color: #13bba7 !important; /* #13BBA7 Teal Green */
 }
 
+
 .brand-text {
   color: #FFC523; /* Yellow - matches flyer title color */
   font-family: 'Poppins', sans-serif;
@@ -17,7 +18,7 @@
 }
 
 .btn-warning:hover {
-  background-color: #FF8D29 !important; /* Orange on hover */
+  background-color: #316E62 !important; /* Orange on hover */
 }
 
 /* For Menu */
