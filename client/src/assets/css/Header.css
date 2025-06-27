@@ -1,4 +1,10 @@
 
+/* use this to see a full css outline for testing/debugging */
+* {
+  outline: 1px solid red;
+}
+
+
 .bg-tealgreen {
   background-color: #316E62 !important; /* #13BBA7 Teal Green */
 }
@@ -77,4 +83,25 @@
 .custom-dropdown .dropdown-item:focus {
   background-color: #FFC523 !important;
   color: #000000 !important;
+}
+
+/* navigation.css */
+
+.navbar {
+  background: linear-gradient(90deg, #316E62 0%, #245C52 100%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem; /* restore slight padding if needed */
+  padding-right: 1rem;
+}
+
+
+.container-fluid {
+  padding-left: 1rem; /* restore slight padding if needed */
+  padding-right: 1rem;
+}
+
+.navbar-nav {
+  margin-left: auto !important; /* force right alignment */
 }
