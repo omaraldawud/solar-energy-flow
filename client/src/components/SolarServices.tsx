@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { FaHome, FaBuilding, FaTools } from "react-icons/fa";
-import { CompanyConfig } from "../../data/constants";
-import solarServicesData from '../../data/solarServicesData';
+import { CompanyConfig } from "../data/constants";
+import solarServicesData from '../data/solarServicesData';
 
 const iconMap: Record<string, JSX.Element> = {
   FaHome: <FaHome size={48} className="text-primary mb-3" />,

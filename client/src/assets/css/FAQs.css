@@ -1,0 +1,77 @@
+.faqs {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  max-width: 70%;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  border: 2px solid #1ca986;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(28, 169, 134, 0.2);
+}
+
+.faqs h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1ca986;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  margin: 0;
+}
+
+.accordion-button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1ca986;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: rgba(28, 169, 134, 0.1);
+  outline: none;
+}
+
+/* Use +/- only (no arrows) */
+.accordion-button::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.accordion-button[aria-expanded='true']::after {
+  content: '−';
+}
+
+.accordion-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.accordion-collapse.show {
+  max-height: 100vh;
+}
+
+.accordion-body {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}

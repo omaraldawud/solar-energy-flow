@@ -1,0 +1,9 @@
+.how-it-works {
+  background-color: #f9f9f9;
+}
+.how-it-works .step-icon svg {
+  stroke: #1CA986; /* A nice green */
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}

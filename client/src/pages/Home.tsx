@@ -1,12 +1,16 @@
 import React from 'react';
+
+//Components
 import Hero from '../components/Hero';
-import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import { FaPhone } from 'react-icons/fa';
-import '../components/Header.css';
-import MainNavigation from '../components/MainNavigation';
 import HeaderTop from '../components/HeaderTop';
 import Footer from '../components/Footer';
 import SolarServices from '../components/SolarServices';
+import { FAQs } from '../components/FAQs';
+
+//Style Sheets
+import '../assets/css/Header.css'; 
+import { HowItWorks } from '../components/HowItWorks';
+
 
 const Home: React.FC = () => {
   return (
@@ -29,10 +33,11 @@ const Home: React.FC = () => {
         formTitle="Want to Learn More? Contact Us"
         ctaButtonText="Contact Us Now"
       />
+      <HowItWorks />
       <SolarServices />
+      <FAQs />
       <Footer />
     </div>
-    
   );
 };
 

@@ -7,7 +7,7 @@ import {
           COMPANY_ADDRESS, 
           COMPANY_PHONE_LINK, 
           COMPANY_PHONE_DISPLAY } 
-from '../../data/constants';
+from '../data/constants';
 
 import { 
   navLinksResidential,

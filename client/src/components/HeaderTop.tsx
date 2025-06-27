@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaPhone } from 'react-icons/fa';
 import MainNavigation from './MainNavigation';
-import './Header.css'; // Custom styles here (if needed)
+import '../assets/css/Header.css'; 
 
 import { COMPANY_NAME , COMPANY_PHONE_DISPLAY, COMPANY_PHONE_LINK } 
-  from '../../data/constants';
+  from '../data/constants';
 
 
 const Header: React.FC = () => {
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             {/* Phone CTA */}
             <Col xs={4} md={3} className="d-flex justify-content-end align-items-center">
               <a  href={`tel:${COMPANY_PHONE_LINK}`} className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
-                <FaPhone size={18} color="white" className="me-2" />
+                <FaPhone size={32} color="white" className="me-2" />
                 <span className="d-none d-md-block">
                   Join Us in Making <br />a Difference! <br />
                   {COMPANY_PHONE_DISPLAY}

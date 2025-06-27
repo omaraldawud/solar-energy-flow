@@ -1,5 +1,3 @@
-import { IconType } from 'react-icons';
-import { FaHome, FaBuilding, FaTools } from 'react-icons/fa';
 export type IconKey = 'FaHome' | 'FaBuilding' | 'FaTools';
 
 
