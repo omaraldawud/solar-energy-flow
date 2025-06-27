@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({
       <Container className="py-5">
         <Row className="g-4 d-flex align-items-stretch">
           {/* Left Section */}
-          <Col lg={8} sm={12}>
+          <Col md={8} xs={12}>
             <h1 className="display-5 fw-bold text-white">{title}</h1>
             <p className="lead mt-3" style={{ color: '#FFC523' }}>
               {subtitle1} {subtitle2}
@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({
                 />
                 <div className="position-relative z-2 d-flex flex-column flex-lg-row gap-4 p-4">
                   {/* Card 1 */}
-                  <div className="bg-tealgreen p-3 rounded-4 text-white flex-fill">
+                  <div className="bg-lightgreen p-3 rounded-4 text-white flex-fill">
                     <h4 className="fw-bold mb-2">Direct Energy</h4>
                     <p>We source directly from solar manufacturers</p>
                     <ul className="list-unstyled small">
@@ -71,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({
                   </div>
 
                   {/* Card 2 */}
-                  <div className="bg-tealgreen p-3 rounded-4 text-white flex-fill">
+                  <div className="bg-lightgreen p-3 rounded-4 text-white flex-fill">
                     <h4 className="fw-bold mb-2">
                       <strong className="text-white">FREE</strong> Property Assessment
                     </h4>
@@ -80,7 +80,7 @@ const Hero: React.FC<HeroProps> = ({
                         <i className="fas fa-house me-2" /> Property Address
                       </li>
                       <li className="mb-2 d-flex align-items-center">
-                        <i className="fas fa-file-invoice me-2" /> Billing Information
+                        <i className="fas fa-file-invoice me-2" /> &nbsp; Billing Information
                       </li>
                     </ul>
                     <h5 className="fw-bold mt-3 mb-2">Includes:</h5>
@@ -105,7 +105,7 @@ const Hero: React.FC<HeroProps> = ({
           </Col>
 
           {/* Right Section: Form */}
-          <Col lg={4} sm={12}>
+          <Col md={4} xs={12}>
             <div className="p-4 bg-white shadow rounded h-100 d-flex flex-column justify-content-center">
               <h3 className="h5 mb-4 text-center">{formTitle}</h3>
               <ContactForm ctaButtonText={ctaButtonText} />

@@ -4,6 +4,7 @@ import { FaPhone } from 'react-icons/fa';
 import MainNavigation from './MainNavigation';
 import './Header.css'; // Custom styles here (if needed)
 import CallToActionBanner from './CallToActionBanner';
+import { COMPANY_PHONE_DISPLAY,  COMPANY_PHONE_LINK } from './constants/Constants';
 
 const Header: React.FC = () => {
   return (
@@ -12,28 +13,35 @@ const Header: React.FC = () => {
           <Row className="align-items-center">
 
             {/* Logo & Title */}
-            <Col xs={8} md={4} className="d-flex align-items-center">
-              <img
-                src="/images/SolarEnergyFlow-Logo.png"
-                alt="Solar Energy Flow Logo"
-                style={{ maxWidth: '120px' }}
-                className="me-2"
-              />
-              <h1 className="fs-5 fw-bold d-none d-md-block" style={{
-                background: 'linear-gradient(135deg, #316E62 0%, #FFC523 100%)',
-                WebkitBackgroundClip: 'text',
-                color: 'transparent',
-                textShadow: '0 2px 4px rgba(0,0,0,0.1)'
-              }}>
-                Solar Energy Flow
-              </h1>
-            </Col>
+        <Col xs={8} md={4} className="d-block d-md-none">
+          <div className="d-flex align-items-center mb-2">
+            <img
+              src="/images/SolarEnergyFlow-Logo.png"
+              alt="Solar Energy Flow Logo"
+              style={{ maxWidth: '60px' }}
+              className="me-2"
+            />
+            <h1 className="fs-6 fw-bold mb-0">Solar Energy Flow</h1>
+          </div>
+
+          <div>
+            <a
+              style={{ color: 'rgb(38, 204, 167)', fontWeight: 600 }}
+              href={`tel:${COMPANY_PHONE_LINK}`}
+            >
+              {COMPANY_PHONE_DISPLAY}
+            </a>
+          </div>
+        </Col>
+
 
             {/* Phone CTA */}
             <Col xs={4} md={3} className="d-flex justify-content-end align-items-center">
-              <a href="tel:+16308008077" className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
+              <a href={`tel:${COMPANY_PHONE_LINK}`} className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
                 <FaPhone size={18} color="white" className="me-2" />
-                <span className="d-none d-md-block">Join Us in Making <br />a Difference! <br />+1 (630) 800-8077</span>
+                <span className="d-none d-md-block">
+                  Join Us in Making <br />a Difference! <br />
+                  {COMPANY_PHONE_DISPLAY}</span>
               </a>
             </Col>
 
