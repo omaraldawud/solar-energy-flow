@@ -1,38 +1,21 @@
+import { SOCIAL_LINKS } from '../../data/constants';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+
+import '../../css/FooterSocial.css';
 
 const FooterSocialInfo = () => {
   return (
-    <div className="space-y-4 text-[#BCBA63]">
         <div className="flex space-x-4 mt-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              style={{ color: '#E3E1A9' }}
-            >
-              <FaFacebookF className="w-6 h-6 text-[#1877F2]" aria-hidden="true" />
+            <a className="mx-3 social-icon facebook" href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FaFacebookF size={32}/>
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              style={{ marginLeft: '30px', color: '#E3E1A9' }}
-            >
-              <FaInstagram className="w-6 h-6 text-[#E4405F]" aria-hidden="true" />
+            <a className="mx-3 social-icon facebook" href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <FaTwitter size={32}/>
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              style={{ marginLeft: '30px', color: '#E3E1A9' }}
-            >
-              <FaTwitter className="w-6 h-6 text-[#1DA1F2]" aria-hidden="true" />
+            <a className="mx-3 social-icon instagram" href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram size={32}/>
             </a>
-          </div>
-    </div>
+        </div>
   );
 };
 

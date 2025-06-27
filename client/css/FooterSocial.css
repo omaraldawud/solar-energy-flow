@@ -1,0 +1,20 @@
+/* Social Icon Official Color */
+.social-icon svg {
+  transition: color 0.2s ease;
+}
+
+/* Brand colors */
+.social-icon.facebook svg {
+  color: #3b5998 !important;;
+}
+.social-icon.twitter svg {
+  color: #1DA1F2 !important;;
+}
+.social-icon.instagram svg {
+  color: #E4405F !important;;
+}
+
+/* Hover effect */
+.social-icon:hover svg {
+  color: #E3E1A9 !important;
+}
