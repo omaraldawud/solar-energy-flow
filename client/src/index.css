@@ -45,3 +45,8 @@ a:visited {
 a:active {
   color: #8B8935; /* Even darker when active/clicked (optional) */
 }
+
+
+.red-bullets li::marker {
+  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity, 1)) !important;
+}

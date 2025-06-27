@@ -3,8 +3,10 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaPhone } from 'react-icons/fa';
 import MainNavigation from './MainNavigation';
 import './Header.css'; // Custom styles here (if needed)
-import CallToActionBanner from './CallToActionBanner';
-import { COMPANY_PHONE_DISPLAY,  COMPANY_PHONE_LINK } from './constants/Constants';
+
+import { COMPANY_NAME , COMPANY_PHONE_DISPLAY, COMPANY_PHONE_LINK } 
+  from '../../data/constants';
+
 
 const Header: React.FC = () => {
   return (
@@ -13,35 +15,28 @@ const Header: React.FC = () => {
           <Row className="align-items-center">
 
             {/* Logo & Title */}
-        <Col xs={8} md={4} className="d-block d-md-none">
-          <div className="d-flex align-items-center mb-2">
-            <img
-              src="/images/SolarEnergyFlow-Logo.png"
-              alt="Solar Energy Flow Logo"
-              style={{ maxWidth: '60px' }}
-              className="me-2"
-            />
-            <h1 className="fs-6 fw-bold mb-0">Solar Energy Flow</h1>
-          </div>
-
-          <div>
-            <a
-              style={{ color: 'rgb(38, 204, 167)', fontWeight: 600 }}
-              href={`tel:${COMPANY_PHONE_LINK}`}
-            >
-              {COMPANY_PHONE_DISPLAY}
-            </a>
-          </div>
-        </Col>
-
+            <Col xs={8} md={4} className="d-flex align-items-center">
+              <a href="/">  {/* Link to home page */}
+                <img
+                  src="/images/SolarEnergyFlow-Logo.png"
+                  alt="Solar Energy Flow Logo"
+                  style={{ maxWidth: '120px' }}
+                  className="me-2"
+                />
+                </a>
+                <h1 className="fs-5 fw-bold  d-md-block">
+                  {COMPANY_NAME}
+                </h1>
+            </Col>
 
             {/* Phone CTA */}
             <Col xs={4} md={3} className="d-flex justify-content-end align-items-center">
-              <a href={`tel:${COMPANY_PHONE_LINK}`} className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
+              <a  href={`tel:${COMPANY_PHONE_LINK}`} className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
                 <FaPhone size={18} color="white" className="me-2" />
                 <span className="d-none d-md-block">
                   Join Us in Making <br />a Difference! <br />
-                  {COMPANY_PHONE_DISPLAY}</span>
+                  {COMPANY_PHONE_DISPLAY}
+                </span>
               </a>
             </Col>
 

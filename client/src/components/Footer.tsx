@@ -1,16 +1,22 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import FooterContactInfo from './FooterContactInfo';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-import { COMPANY_NAME, COMPANY_PHONE, COMPANY_EMAIL } from '../../data/constants';
+import { 
+          COMPANY_NAME,
+          COMPANY_EMAIL, 
+          COMPANY_ADDRESS, 
+          COMPANY_PHONE_LINK, 
+          COMPANY_PHONE_DISPLAY } 
+from '../../data/constants';
 
 import { 
-  navLinksMain,
   navLinksResidential,
   navLinksCommercial,
-  navSolarProducts,
-  navEmergingSolarProducts
+  navCommunityPrograms
 } from './FooterNavigation'; 
+
+import FooterSocialInfo from './FooterSocialInfo';
+import FooterMainNav from './FooterMainNav';
 /* -------------------------------------------- */
 
 const Footer: React.FC = () => {
@@ -29,11 +35,11 @@ const Footer: React.FC = () => {
                 style={{ maxWidth: '180px' }}
                 className="mb-1"
               />
-              <p>Chicago, Illinois. USA. </p>
+              <p>{COMPANY_ADDRESS} </p>
               <FaPhone size={28} className="me-3" color='#E3E1A9'/>
               <a 
                 className="text-white text-decoration-none" 
-                href="tel:{COMPANY_PHONE}">{COMPANY_PHONE}
+                href={`tel:${COMPANY_PHONE_LINK}`}>{COMPANY_PHONE_DISPLAY}
               </a>
               <div className="mt-3">
                   <FaEnvelope size={28} className="me-3" color='#E3E1A9'/>
@@ -41,108 +47,74 @@ const Footer: React.FC = () => {
                       {COMPANY_EMAIL}
                   </a>
               </div>
-                  <p className="mt-3" style={{ color: '#D6D492' }}>
-                    At {COMPANY_NAME}, we provide expert solar panel installation...
+                  <FooterSocialInfo />
+                  <p className='mt-4' style={{ color: '#D6D492' }}>{COMPANY_ADDRESS}</p>
+                  <p className="mt-5" >
+                    <em>
+                      At {COMPANY_NAME}, we provide expert solar panel system design & installation.
+                    </em>
                   </p>
+                  <FooterMainNav />
             </Col>
-
             {/* Services Links */}
             <Col md={4} className="mb-3">
               <h5 className="text-warning">Solar Energy Services & Prodcuts</h5>
- <Row>
-  {/* Residential Services Column */}
-  <Col md={3} className="mb-3">
-    <h6 className="text-warning mb-3">RESIDENTIAL SERVICES</h6>
-    <ul className="list-unstyled">
-      {navLinksResidential.map(({ href, label }) => (
-        <li key={href} className="mb-2">
-          <a 
-            href={href} 
-            style={{ fontSize: '12px' }} 
-            className="text-white text-decoration-none hover-gold"
-          >
-            {label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </Col>
+              <Row>
+                  {/* Residential Services Column */}
+                  <Col md={5} className="mb-3 mt-3">
+                    <h6 className="text-danger mb-3">RESIDENTIAL SERVICES</h6>
+                    <ul className="red-bullets ps-3">
+                      {navLinksResidential.map(({ href, label }) => (
+                        <li key={href} className="mb-2">
+                          <a 
+                            href={href} 
+                            style={{ fontSize: '12px' }} 
+                            className="text-white text-decoration-none hover-gold"
+                          >
+                            {label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </Col>
 
-  {/* Commercial Services Column */}
-  <Col md={3} className="mb-3">
-    <h6 className="text-warning mb-3">COMMERCIAL SERVICES</h6>
-    <ul className="list-unstyled">
-      {navLinksCommercial.map(({ href, label }) => (
-        <li key={href} className="mb-2">
-          <a 
-            href={href} 
-            style={{ fontSize: '12px' }} 
-            className="text-white text-decoration-none hover-gold"
-          >
-            {label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </Col>
+                  {/* Commercial Services Column */}
+                  <Col md={5} className="mb-3">
+                    <h6 className="text-danger mb-3 mt-3">COMMERCIAL SERVICES</h6>
+                    <ul className="red-bullets ps-3">
+                      {navLinksCommercial.map(({ href, label }) => (
+                        <li key={href} className="mb-2">
+                          <a 
+                            href={href} 
+                            style={{ fontSize: '12px' }} 
+                            className="text-white text-decoration-none hover-gold"
+                          >
+                            {label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </Col>
+              </Row>
+        </Col>
 
-  {/* Solar Products Column */}
-  <Col md={3} className="mb-3">
-    <h6 className="text-warning mb-3">SOLAR PRODUCTS</h6>
-    <ul className="list-unstyled">
-      {navSolarProducts.map(({ href, label }) => (
-        <li key={href} className="mb-2">
-          <a 
-            href={href} 
-            style={{ fontSize: '12px' }} 
-            className="text-white text-decoration-none hover-gold"
-          >
-            {label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </Col>
+        <Col md={4} className="mb-3">
+              <h5 className="text-warning">Solar Commuity Programs</h5>
+              <p className="fs-6"><strong>Solar Community Programs</strong> provide access to renewable energy and potential savings on electricity bills for households unable to install solar panels.</p>
+              <ul className="red-bullets ps-3">
+              {navCommunityPrograms.map(({ href, label }) => (
+                <li key={href} className="mb-2">
+                  <a 
+                    href={href} 
+                    style={{ fontSize: '12px' }} 
+                    className="text-white text-decoration-none hover-gold"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-  {/* Emerging Technologies Column */}
-  <Col md={3} className="mb-3">
-    <h6 className="text-warning mb-3">EMERGING TECHNOLOGIES</h6>
-    <ul className="list-unstyled">
-      {navEmergingSolarProducts.map(({ href, label }) => (
-        <li key={href} className="mb-2">
-          <a 
-            href={href} 
-            style={{ fontSize: '12px' }} 
-            className="text-white text-decoration-none hover-gold"
-          >
-            {label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </Col>
-</Row>
-            </Col>
-
-            {/* Social Links */}
-            <Col md={4} className="mb-3">
-              <h5 className="text-warning">Stay Connected</h5>
-              <FooterContactInfo />
-              <ul style={{
-                display: 'flex',
-                gap: '20px',
-                paddingLeft: '0',
-                listStyle: 'none',
-                margin: '1rem 0 0 0'
-              }}>
-                {navLinksMain.map(({ href, label }) => (
-                  <li key={href}>
-                    <a href={href} style={{ fontSize: '12px' }} className="text-white text-decoration-none hover-gold">
-                      {label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </Col>
           </Row>
         </Container>
@@ -151,7 +123,7 @@ const Footer: React.FC = () => {
       {/* Bottom Bar */}
       <div style={{ 
         backgroundColor: '#2A3037',
-        width: '100vw',
+        maxWidth: '100vw',
         position: 'relative',
         left: '50%',
         right: '50%',
