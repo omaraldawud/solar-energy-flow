@@ -1,18 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "outDir": "./dist",
-    "rootDir": ".",
-    "strict": true,
+    "rootDir": "./",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "types": ["node"]
+    "strict": true,
+    "skipLibCheck": true
   },
-  "include": ["./*.ts", "./routes/*.ts"],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  }
+  "include": ["server.ts", "routes/**/*"]
 }
