@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import ContactForm from './ContactForm';
+import ContactForm from './forms-cta/ContactForm';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import AirtableForm from './forms-cta/AirtableForm';
 
 type HeroProps = {
   title: string;
@@ -108,7 +109,8 @@ const Hero: React.FC<HeroProps> = ({
           <Col md={4} xs={12}>
             <div className="p-4 bg-white shadow rounded h-100 d-flex flex-column justify-content-center">
               <h3 className="h5 mb-4 text-center">{formTitle}</h3>
-              <ContactForm ctaButtonText={ctaButtonText} />
+              {/*<ContactForm ctaButtonText={ctaButtonText} />*/}
+              <AirtableForm />
             </div>
           </Col>
         </Row>

@@ -10,24 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Install dependencies
+      # === FRONTEND ===
+      - name: Install frontend dependencies
         working-directory: ./client
         run: npm install
 
-      - name: Build the project
+      - name: Build frontend
         working-directory: ./client
         run: npm run build
 
-      - name: Debug FTP Host
-        run: echo "${{ secrets.FTP_HOST }} / ${{ secrets.FTP_USERNAME }}"
+      # === BACKEND ===
+      - name: Install backend dependencies
+        working-directory: ./server
+        run: npm install
 
-      - name: Deploy to GoDaddy via FTP
+      - name: Build backend
+        working-directory: ./server
+        run: npm run build
+
+      # === DEPLOY FRONTEND ===
+      - name: Deploy Frontend to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -35,4 +45,22 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./client/dist/
           server-dir: /
+          dangerous-clean-slate: true
+          exclude: |
+            **/*.png
+            **/*.jpg
+            **/*.jpeg
+            **/*.gif
+            **/*.svg
+            **/*.webp
+
+      # === DEPLOY BACKEND ===
+      - name: Deploy Backend to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./server/dist/
+          server-dir: /server/
           dangerous-clean-slate: true

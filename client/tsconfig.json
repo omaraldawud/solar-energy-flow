@@ -18,7 +18,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "vite.config.ts"
-  ],
+, "vite-env.d.ts"  ],
   "exclude": [
     "node_modules",
     "dist"
