@@ -7,3 +7,25 @@
   height: 64px;
   margin: 0 auto;
 }
+
+/* Add to HowItWorks.css */
+.step-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.highlight-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #1bbfff;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add to HowItWorks.css */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 20%; /* 5 items per row (100%/5) */
+    max-width: 20%;
+  }
+}

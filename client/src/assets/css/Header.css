@@ -6,7 +6,7 @@
 
 
 .bg-lightgreen {
-  background-color: #26CCA7 !important;
+  background-color: #3ca1c9 !important;
   color: #ffffff !important; /* White text for contrast */
   border: 1px solid #004d00 !important; /* Slightly darker border */
   border-radius: 6px; /* Soft rounded corners */
@@ -18,7 +18,7 @@
 
 /* Hover effect for interactivity */
 .bg-lightgreen:hover {
-  background-color: #316E62 !important;
+  background-color: #BCBA63 !important;
   box-shadow: 
     0 3px 6px rgba(0, 0, 0, 0.25),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);

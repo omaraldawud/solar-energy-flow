@@ -11,7 +11,7 @@ type HeroProps = {
   description: React.ReactNode;
   imageUrl?: string;
   imageAlt?: string;
-  formTitle?: string;
+  cardTitle?: string;
   ctaButtonText?: string;
 };
 
@@ -21,9 +21,8 @@ const Hero: React.FC<HeroProps> = ({
   subtitle2,
   description,
   imageUrl,
-  imageAlt,
-  formTitle = 'Get a Free Quote',
-  ctaButtonText = 'Request Quote Today',
+  imageAlt = 'Solar Ideas for Better Planet',
+  cardTitle = 'Get a Free Quote',
 }) => {
   return (
     <section style={{ backgroundColor: '#316E62' }}>
@@ -32,8 +31,11 @@ const Hero: React.FC<HeroProps> = ({
           {/* Left Section */}
           <Col md={8} xs={12}>
             <h1 className="display-5 fw-bold text-white">{title}</h1>
-            <p className="lead mt-3" style={{ color: '#FFC523' }}>
-              {subtitle1} {subtitle2}
+            <p className="lead mt-3" style={{ color: '#FFC523', fontWeight: 'bold' }}>
+              {subtitle1} <br /> 
+              <span style={{color: '#1bbfff'}}>
+                {subtitle2} 
+              </span>
             </p>
             <p className="text-white">{description}</p>
 
@@ -49,11 +51,13 @@ const Hero: React.FC<HeroProps> = ({
                     opacity: 0.2,
                     zIndex: 1,
                   }}
+                  role="img" // Tells screen readers this div acts as an image
+                  aria-label = {imageAlt}
                 />
                 <div className="position-relative z-2 d-flex flex-column flex-lg-row gap-4 p-4">
                   {/* Card 1 */}
                   <div className="bg-lightgreen p-3 rounded-4 text-white flex-fill">
-                    <h4 className="fw-bold mb-2">Direct Energy</h4>
+                    <h3 className="fw-bold mb-2">Direct Energy</h3>
                     <p>We source directly from solar manufacturers</p>
                     <ul className="list-unstyled small">
                       <li className="mb-2 d-flex align-items-center">
@@ -69,13 +73,14 @@ const Hero: React.FC<HeroProps> = ({
                         <i className="fas fa-hard-hat me-2" /> Built for Harsh Weather
                       </li>
                     </ul>
+                    <h4 className='mt-5'>Fast custom designs & full-service equipment procurement</h4>
                   </div>
 
                   {/* Card 2 */}
                   <div className="bg-lightgreen p-3 rounded-4 text-white flex-fill">
-                    <h4 className="fw-bold mb-2">
-                      <strong className="text-white">FREE</strong> Property Assessment
-                    </h4>
+                    <h3 className="fw-bold mb-2">
+                      <span className="text-white">FREE  Property Assessment</span>
+                    </h3>
                     <ul className="list-unstyled small">
                       <li className="mb-2 d-flex align-items-center">
                         <i className="fas fa-house me-2" /> Property Address
@@ -84,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({
                         <i className="fas fa-file-invoice me-2" /> &nbsp; Billing Information
                       </li>
                     </ul>
-                    <h5 className="fw-bold mt-3 mb-2">Includes:</h5>
+                    <h4 className="fw-bold mt-5 mb-2">Free Quote Includes:</h4>
                     <ul className="list-unstyled small">
                       <li className="mb-2 d-flex align-items-center">
                         <i className="fas fa-solar-panel me-2" /> Rooftop System Design
@@ -96,9 +101,6 @@ const Hero: React.FC<HeroProps> = ({
                         <i className="fas fa-file-invoice-dollar me-2" /> Full Project Quote
                       </li>
                     </ul>
-                    <Button className="bg-success border-0 mt-2">
-                      Click to See If You Qualify <i className="fas fa-chevron-right ms-2" />
-                    </Button>
                   </div>
                 </div>
               </div>
@@ -108,7 +110,7 @@ const Hero: React.FC<HeroProps> = ({
           {/* Right Section: Form */}
           <Col md={4} xs={12}>
             <div className="p-4 bg-white shadow rounded h-100 d-flex flex-column justify-content-center">
-              <h3 className="h5 mb-4 text-center">{formTitle}</h3>
+              <h3 className="h5 mb-4 text-center">{cardTitle}</h3>
               {/*<ContactForm ctaButtonText={ctaButtonText} />*/}
               <AirtableForm />
             </div>
