@@ -165,7 +165,7 @@ export const HowItWorksProcess: React.FC = () => {
             <div className="text-center">
             <p className="highlight-box">
                 <strong style={{color:'#1bbfff'}}>Featured Partnership:</strong> All installations are performed by our network of 
-                <strong > certified Minnesota solar installers</strong> for guaranteed quality.
+                <strong> certified Minnesota solar installers</strong> for guaranteed quality.
             </p>
             </div>
         </div>

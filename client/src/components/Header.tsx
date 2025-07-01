@@ -11,11 +11,11 @@ import { COMPANY_NAME , COMPANY_PHONE_DISPLAY, COMPANY_PHONE_LINK }
 const Header: React.FC = () => {
   return (
     <header className="sticky-top bg-tealgreen text-white py-2 shadow-sm w-100">
-        <Container fluid>
+        <Container>
           <Row className="align-items-center">
 
             {/* Logo & Title */}
-            <Col xs={8} md={4} className="d-flex align-items-center">
+            <Col xs={12} md={3} className="d-flex align-items-center">
               <a href="/">  {/* Link to home page */}
                 <img
                   src="/images/SolarEnergyFlow-Logo.png"
@@ -30,14 +30,15 @@ const Header: React.FC = () => {
             </Col>
 
             {/* Phone CTA */}
-            <Col xs={4} md={3} className="d-flex justify-content-end align-items-center">
-              <a  href={`tel:${COMPANY_PHONE_LINK}`} className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
-                <FaPhone size={32} color="white" className="me-2" />
-                <span className="d-none d-md-block">
-                  Join Us in Making <br />a Difference! <br />
-                  {COMPANY_PHONE_DISPLAY}
-                </span>
+            <Col xs={12} md={4} className="d-flex align-items-start mt-3 mt-md-0">
+              <a  href={`tel:${COMPANY_PHONE_LINK}`} 
+                  className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
+                  <FaPhone size={32} color="white" className="me-4" />
               </a>
+              <span className="mx-4" style={{color:'#E3E1A9'}}>
+                  Join Us in Making a Difference! <br />
+                  {COMPANY_PHONE_DISPLAY}
+              </span>
             </Col>
 
             {/* Navigation */}

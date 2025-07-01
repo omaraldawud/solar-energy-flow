@@ -2,15 +2,15 @@ import React from 'react';
 
 //Components
 import Hero from '../components/Hero';
-import HeaderTop from '../components/HeaderTop';
+import HeaderTop from '../components/Header';
 import Footer from '../components/Footer';
 import SolarServices from '../components/SolarServices';
 import { FAQs } from '../components/FAQs';
+import { HowItWorksProcess } from '../components/HowItWorksProcess';
+
 
 //Style Sheets
 import '../assets/css/Header.css'; 
-import { HowItWorks } from '../components/HowItWorks';
-import { HowItWorksProcess } from '../components/HowItWorksProcess';
 
 
 const Home: React.FC = () => {
