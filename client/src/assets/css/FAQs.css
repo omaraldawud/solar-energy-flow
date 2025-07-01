@@ -1,77 +1,107 @@
-.faqs {
-  background-color: #f9f9f9;
-  padding: 2rem 1rem;
-  max-width: 70%;
-  margin: 2rem auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  border: 2px solid #1ca986;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(28, 169, 134, 0.2);
+/* Base tab style */
+.nav-tabs {
+  border-bottom: none;
+  justify-content: flex-start !important; /* LEFT JUSTIFIED */
 }
 
-.faqs h2 {
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #1ca986;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #ccc;
-}
-
-.accordion-header {
-  margin: 0;
-}
-
-.accordion-button {
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  padding: 0.75rem 1rem;
-  font-size: 1.05rem;
+/* Inactive tab */
+.nav-tabs .nav-link {
+  background-color: #6DE7D4; /* Light Aqua */
+  color: #112E2A;            /* Dark Green text */
   font-weight: 600;
-  color: #1ca986;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  position: relative;
+  margin-right: 6px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.accordion-button:hover,
-.accordion-button:focus {
-  background-color: rgba(28, 169, 134, 0.1);
+/* Active tab */
+// src/components/FAQsTabbed.tsx
+import { Tabs, Tab, Container } from 'react-bootstrap';
+import { solarFaqs, installerFaqs, designFaqs } from '../data/faqData';
+import '../assets/css/FAQs.css'
+
+import Accordion from 'react-bootstrap/Accordion';
+
+const renderFAQList = (faqs: any[]) => (
+  <Accordion defaultActiveKey="">
+    {faqs.map((faq, idx) => (
+      <Accordion.Item eventKey={String(idx)} key={idx}>
+        <Accordion.Header>{faq.question}</Accordion.Header>
+        <Accordion.Body>{faq.answer}</Accordion.Body>
+      </Accordion.Item>
+    ))}
+  </Accordion>
+);
+
+
+export const FAQs = () => (
+  <section className="py-5 bg-light" id="faqs">
+    <Container>
+      <h2 className="text-center mb-4">Frequently Asked Questions</h2>
+      <Tabs
+        defaultActiveKey="solar"
+        id="faq-tabs"
+        className="mb-3 justify-content-start"
+        
+      >        
+            <Tab eventKey="solar" title="Solar Energy">
+              {renderFAQList(solarFaqs)}
+            </Tab>
+            <Tab eventKey="installers" title="Installer Partners">
+              {renderFAQList(installerFaqs)}
+            </Tab>
+            <Tab eventKey="design" title="System Design">
+              {renderFAQList(designFaqs)}
+            </Tab>
+      </Tabs>
+    </Container>
+  </section>
+);
+
+
+//css
+/* Base tab style */
+.nav-tabs {
+  border-bottom: none;
+  justify-content: flex-start !important; /* LEFT JUSTIFIED */
+}
+
+/* Inactive tab */
+.nav-tabs .nav-link {
+  background-color: #6DE7D4; /* Light Aqua */
+  color: #112E2A;            /* Dark Green text */
+  font-weight: 600;
+  margin-right: 6px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Active tab */
+.nav-tabs .nav-link.active {
+  background-color: #13BBA7 !important; /* Teal */
+  color: white !important;
+  border: 2px solid #13BBA7 !important;
+  box-shadow: none;
+  /* Remove default button styles */
+  border-radius: 0.5rem 0.5rem 0 0 !important;
   outline: none;
+  box-shadow: none;
 }
 
-/* Use +/- only (no arrows) */
-.accordion-button::after {
-  content: '+';
-  position: absolute;
-  right: 1rem;
-  font-size: 1.3rem;
-  transition: transform 0.3s ease;
-  font-weight: bold;
+/* Hover effect */
+ .nav-link:hover {
+  background-color: #FF8D29; /* Accent on hover */
+  color: white;
 }
 
-.accordion-button[aria-expanded='true']::after {
-  content: '−';
-}
 
-.accordion-collapse {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
 
-.accordion-collapse.show {
-  max-height: 100vh;
-}
-
-.accordion-body {
-  padding: 0 1rem 1rem 1rem;
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.5;
+/* Hover effect */
+ .nav-link:hover {
+  background-color: #FF8D29; /* Accent on hover */
+  color: white;
 }

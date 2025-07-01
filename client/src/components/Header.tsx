@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FaPhone } from 'react-icons/fa';
+import { FaPhone, FaSun } from 'react-icons/fa';
 import MainNavigation from './MainNavigation';
 import '../assets/css/Header.css'; 
 
@@ -30,20 +30,30 @@ const Header: React.FC = () => {
             </Col>
 
             {/* Phone CTA */}
-            <Col xs={12} md={4} className="d-flex align-items-start mt-3 mt-md-0">
-              <a  href={`tel:${COMPANY_PHONE_LINK}`} 
-                  className="btn btn-warning text-dark fw-bold d-flex align-items-center px-3 py-2">
-                  <FaPhone size={32} color="white" className="me-4" />
-              </a>
-              <span className="mx-4" style={{color:'#E3E1A9'}}>
-                  Join Us in Making a Difference! <br />
-                  {COMPANY_PHONE_DISPLAY}
-              </span>
-            </Col>
+              <Col xs={12} md={4} className="d-flex align-items-center mt-3 mt-md-0">
+                <div className="text-center w-100">
+                  <p 
+                    className="fw-bold fs-5 mb-0"
+                    style={{ color: '#E3E1A9' }}>
+                    <FaSun className="me-3" color="gold" />
+                    Join Us in Making a Difference!
+                  </p>
 
+                </div>
+              </Col>
             {/* Navigation */}
             <Col xs={12} md={5} className="mt-3 mt-md-0">
-              <MainNavigation />
+              <Row><MainNavigation /></Row>
+              <Row>
+                <Col className="text-end pt-4">
+                  <a  
+                      href={`tel:${COMPANY_PHONE_LINK}`} 
+                      className="btn btn-warning text-dark fw-bold  align-items-center px-3 py-2">
+                      <FaPhone size={32} color="white" className="me-4" />
+                      {COMPANY_PHONE_DISPLAY}
+                  </a>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
