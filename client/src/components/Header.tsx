@@ -49,12 +49,12 @@ const Header: React.FC = () => {
               </Row>
               <Row>
                 <Col className="text-end pt-4">
-                  <a  
-                      href={`tel:${COMPANY_PHONE_LINK}`} 
-                      className="cta-btn align-items-center px-4 py-3">
-                      <FaPhone size={32}  className="me-4" />
-                      {COMPANY_PHONE_DISPLAY}
-                  </a>
+                    <a href={`tel:${COMPANY_PHONE_LINK}`} className="text-decoration-none">
+                        <button className="btn btn-outline-light d-inline-flex align-items-center px-4 py-3 cta-light-btn">
+                          <FaPhone size={20} className="me-3" />
+                          {COMPANY_PHONE_DISPLAY}
+                        </button>
+                    </a>
                 </Col>
               </Row>
             </Col>
