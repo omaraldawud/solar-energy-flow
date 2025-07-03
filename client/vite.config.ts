@@ -1,30 +1,34 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path'; // Add this import
 
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: 'automatic', // Ensures proper TSX handling
+      jsxRuntime: 'automatic',
       babel: {
-        plugins: [], // Add any needed babel plugins here
+        plugins: [],
       },
     }),
   ],
   server: {
     port: 5173,
     strictPort: true,
-    open: true, // Automatically open browser
+    open: true,
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Prioritize TS files
+    alias: {
+      '@': path.resolve(__dirname, 'src'), // 👈 this is what enables @/
+    },
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   esbuild: {
-    loader: 'tsx', // Force TSX processing
+    loader: 'tsx',
   },
   assetsInclude: ['**/*.avif'],
   build: {
-    outDir: 'dist', // Build output directory
-    sourcemap: true, // Optional: generate source maps for easier debugging
+    outDir: 'dist',
+    sourcemap: true,
   },
-  base: './', // Ensures relative paths for FTP deployment (like GoDaddy)
+  base: './',
 });

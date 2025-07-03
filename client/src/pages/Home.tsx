@@ -20,17 +20,21 @@ const Home: React.FC = () => {
 
       {/* Hero Section */}
       <Hero
-        title="Bright Ideas Start with Solar"
-        subtitle1="Minnesota Solar Systems Designed & Delivered By Experts"
-        subtitle2="Smart Energy: For a Sustainable Future."
-        description={
-          <>
-          At Solar Energy Flow, we help Minnesota homeowners and businesses unlock the power of solar with high-efficiency <strong>Minnesota solar systems</strong>—expertly designed and installed through trusted <em>local partnerships</em>. Together, we’re building a cleaner future for our communities, one panel at a time.          </>
-        }
-        imageUrl="/images/solar-panel/residential-solar-installation.jpg"
-        imageAlt="Solar Ideas for Better Planet"
-        cardTitle="Free Solar System Design & Estimate"
-      />
+          title="Get Your Free Solar System Design"
+          subtitle1="Minnesota Solar System Design by Local Experts"
+          subtitle2="Custom Solar Plans for a Brighter Future"
+          description={
+            <>
+              At Solar Energy Flow, we specialize in <strong>custom solar system design</strong> for Minnesota homes and businesses. 
+              Our team of experts uses advanced tools and local insights to create <em>efficient, cost-saving solar plans</em> tailored to your roof, energy needs, and goals.
+              From concept to connection, we’re your partner in building a sustainable future.
+            </>
+          }
+          imageUrl="/images/solar-panel/residential-solar-installation.jpg"
+          imageAlt="Expert Solar System Design in Minnesota"
+          cardTitle="Request Your Free Design & Estimate"
+        />
+
       {/* <HowItWorks /> */}
       <HowItWorksProcess />
       <SolarServices />

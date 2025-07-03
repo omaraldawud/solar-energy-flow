@@ -9,7 +9,7 @@ const MainNavigation: React.FC = () => {
                   <Navbar.Toggle aria-controls="navbar-nav" className="ms-auto" />
                   <Navbar.Collapse id="navbar-nav">
                     <Nav className="ms-auto">
-                      <Nav.Link href="#home">Home</Nav.Link>
+                      <Nav.Link href="/">Home</Nav.Link>
                       <NavDropdown title="Solar Services" id="services-dropdown">
                         <NavDropdown.Item href="#residential">Residential</NavDropdown.Item>
                         <NavDropdown.Item href="#commercial">Commercial</NavDropdown.Item>
@@ -20,7 +20,7 @@ const MainNavigation: React.FC = () => {
                         <NavDropdown.Item href="#benefits">Benefits</NavDropdown.Item>
                       </NavDropdown>
                       <NavDropdown title="Contact" id="contact-dropdown">
-                        <NavDropdown.Item href="#contact">Contact Us</NavDropdown.Item>
+                        <NavDropdown.Item href="/free-solar-system-design">Contact Us</NavDropdown.Item>
                         <NavDropdown.Item href="#about">About</NavDropdown.Item>
                       </NavDropdown>
                     </Nav>
