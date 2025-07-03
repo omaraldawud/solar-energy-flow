@@ -1,12 +1,22 @@
 import { Row, Col, Card } from "react-bootstrap";
-import { FaHome, FaBuilding, FaTools } from "react-icons/fa";
-import { CompanyConfig } from "../data/constants";
+import {
+  FaHome,
+  FaBuilding,
+  FaTools,
+  FaProjectDiagram,
+  FaBatteryFull,
+  FaSolarPanel,
+} from 'react-icons/fa';
 import solarServicesData from '../data/solarServicesData';
+import ServiceCard from "./forms-cta-cards/ServiceCard";
 
 const iconMap: Record<string, JSX.Element> = {
   FaHome: <FaHome size={48} className="text-primary mb-3" />,
   FaBuilding: <FaBuilding size={48} className="text-primary mb-3" />,
-  FaTools: <FaTools size={48} className="text-primary mb-3" />,
+  FaTools: <FaTools size={48} className="text-secondary mb-3" />,
+  FaProjectDiagram: <FaProjectDiagram size={48} className="text-success mb-3" />,
+  FaBatteryFull: <FaBatteryFull size={48} className="text-danger mb-3" />,
+  FaSolarPanel: <FaSolarPanel size={48} className="text-warning mb-3" />,
 };
 
 const SolarServices = () => {
@@ -15,24 +25,13 @@ const SolarServices = () => {
       <Row>
         {solarServicesData.map((service) => (
           <Col key={service.id} md={4} className="mb-4">
-            <Card className="h-100 border-0 shadow-sm">
-              {/* Image at the top of the card */}
-              <Card.Img 
-                variant="top" 
-                src={service.imageUrl} 
-                alt={service.title}
-                style={{ height: '200px', objectFit: 'cover' }}
-              />
-              <Card.Body className="text-center p-4">
-                {/* Dynamically rendered icon */}
-                {iconMap[service.icon]}
-                <Card.Title as="h3" className="h4 mb-3">{service.title}</Card.Title>
-                <Card.Text className="mb-4">{service.description}</Card.Text>
-                <a href="#" className="text-primary text-decoration-none fw-bold">
-                  {service.linkText}
-                </a>
-              </Card.Body>
-            </Card>
+            <ServiceCard
+              imageUrl={service.imageUrl}
+              title={service.title}
+              description={service.description}
+              linkText={service.linkText}
+              icon={iconMap[service.icon]}
+            />
           </Col>
         ))}
       </Row>
