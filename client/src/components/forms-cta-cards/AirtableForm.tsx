@@ -7,10 +7,14 @@ const AirtableForm = () => {
       <iframe
         className="airtable-embed"
         src="https://airtable.com/embed/app7xvGRU8J3hHsTe/pagYiOrGoxS4mTxBl/form"
-        frameBorder="0"
         width="100%"
         height="533"
-        style={{ background: 'transparent', border: '1px solid #ccc' }}
+        style={{ 
+            background: 'transparent', 
+            border: '2px solid #E3E1A9',
+            borderRadius: '11px',
+          }}
+        
         onWheel={() => {}} // Workaround for iframe wheel event
       ></iframe>
     </div>

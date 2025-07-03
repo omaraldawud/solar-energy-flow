@@ -18,12 +18,6 @@ button:hover,
   color: #BCBA63 !important;
 }
 
-/* For buttons */
-.btn:hover {
-  border-color: #BCBA63 !important;
-  color: #BCBA63 !important;
-}
-
 
 
 li {
@@ -32,12 +26,6 @@ li {
 a {
   color: #BCBA63;
   text-decoration: none; /* Optional: remove underline */
-}
-
-a:hover,
-a:focus {
-  color: #A8A54B; /* Slightly darker on hover (optional) */
-  text-decoration: underline; /* Optional: underline on hover */
 }
 
 a:visited {
@@ -51,4 +39,21 @@ a:active {
 
 .red-bullets li::marker {
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity, 1)) !important;
+}
+
+/* CSS for CTA*/
+.cta-btn {
+  background-color: #181818 !important;
+  color: #fff !important;
+  border: 4px solid #d0ff5d !important;
+  font-size: 20px;
+  font-weight:900;
+  letter-spacing: 2px;
+  border-radius: 9999px !important;
+  transition: all 0.3s ease;
+}
+
+a.cta-btn:hover {
+  background-color: white !important;
+  color: black !important;
 }

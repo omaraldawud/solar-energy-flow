@@ -1,8 +1,5 @@
 /* Reset Bootstrap's default gutters */
 
-
-
-
 .highlight-blue {
   color: #007bff; /* bootstrap blue, or pick your own */
   font-weight: 600; /* slightly bolder for emphasis */
@@ -68,8 +65,6 @@
   
 }
 
-
-
 .particles {
   position: absolute;
   top: 0;
@@ -122,4 +117,5 @@
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
+
 

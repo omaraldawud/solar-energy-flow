@@ -71,3 +71,31 @@ export const designFaqs = [
     answer: 'A NABCEP-certified engineer reviews and approves every system design before permitting.',
   },
 ];
+
+export const SolarIncentivesFAQs = [
+  {
+    question: "What is the Federal Solar Tax Credit (ITC)?",
+    answer:
+      "The Federal Solar Tax Credit allows you to deduct 30% of the cost of installing a solar energy system from your federal taxes. It's available for both residential and commercial systems installed before 2032.",
+  },
+  {
+    question: "Are there any local or state incentives for solar panels?",
+    answer:
+      "Yes, many states and municipalities offer additional incentives like rebates, performance-based incentives (PBIs), and property tax exemptions. Check your local government or utility provider for details.",
+  },
+  {
+    question: "Can I combine multiple solar incentives?",
+    answer:
+      "Absolutely. You can combine the Federal ITC with state and local incentives, as well as net metering programs, to maximize your savings and reduce your system’s payback time.",
+  },
+  {
+    question: "Do solar incentives apply to battery storage systems?",
+    answer:
+      "Yes, battery systems paired with solar panels are eligible for the Federal Tax Credit if installed at the same time. Some states also offer incentives for standalone battery storage.",
+  },
+  {
+    question: "How do I claim the solar tax credit on my taxes?",
+    answer:
+      "To claim the Federal Solar Tax Credit, you must file IRS Form 5695 with your tax return. It's recommended to consult a tax professional to ensure proper documentation and compliance.",
+  },
+];

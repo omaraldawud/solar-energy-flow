@@ -1,0 +1,64 @@
+.black-card {
+  background-color: #000;
+  color: #f8f9fa;
+  font-size: 25px;
+  border-radius: 24px;
+  padding: 32px 24px;
+  max-width: 320px;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover effect */
+.black-card:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Ensure text colors inside update on hover */
+.black-card:hover .card-title,
+.black-card:hover .card-description {
+  color: #000 !important;
+}
+
+.black-card:hover .learn-more {
+  color: #2a7f00 !important;
+}
+
+/* Other classes */
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 24px;
+  transition: color 0.3s ease;
+}
+
+.learn-more {
+  font-weight: 700;
+  color: #a6ff00;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.learn-more .arrow {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}

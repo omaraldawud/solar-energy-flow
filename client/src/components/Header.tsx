@@ -10,7 +10,9 @@ import { COMPANY_NAME , COMPANY_PHONE_DISPLAY, COMPANY_PHONE_LINK }
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky-top bg-tealgreen text-white py-2 shadow-sm w-100">
+    <header 
+      className="sticky-top bg-tealgreen text-white py-2 shadow-sm w-100"
+      >
         <Container>
           <Row className="align-items-center">
 
@@ -29,8 +31,7 @@ const Header: React.FC = () => {
                 </h1>
             </Col>
 
-            {/* Phone CTA */}
-              <Col xs={12} md={4} className="d-flex align-items-center mt-3 mt-md-0">
+            <Col xs={12} md={4} className="d-flex align-items-center mt-3 mt-md-0">
                 <div className="text-center w-100">
                   <p 
                     className="fw-bold fs-5 mb-0"
@@ -40,16 +41,18 @@ const Header: React.FC = () => {
                   </p>
 
                 </div>
-              </Col>
+            </Col>
             {/* Navigation */}
             <Col xs={12} md={5} className="mt-3 mt-md-0">
-              <Row><MainNavigation /></Row>
+              <Row>
+                <MainNavigation />
+              </Row>
               <Row>
                 <Col className="text-end pt-4">
                   <a  
                       href={`tel:${COMPANY_PHONE_LINK}`} 
-                      className="btn btn-warning text-dark fw-bold  align-items-center px-3 py-2">
-                      <FaPhone size={32} color="white" className="me-4" />
+                      className="cta-btn align-items-center px-4 py-3">
+                      <FaPhone size={32}  className="me-4" />
                       {COMPANY_PHONE_DISPLAY}
                   </a>
                 </Col>

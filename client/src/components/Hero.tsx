@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import ContactForm from './forms-cta/ContactForm';
+import ContactForm from './forms-cta-cards/ContactForm';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import AirtableForm from './forms-cta/AirtableForm';
+import AirtableForm from './forms-cta-cards/AirtableForm';
+import BlackCard from './forms-cta-cards/BlackCard';
 
 type HeroProps = {
   title: string;
@@ -24,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({
   imageAlt = 'Solar Ideas for Better Planet',
   cardTitle = 'Get a Free Quote',
 }) => {
-  return (
+ return (
     <section style={{ backgroundColor: '#316E62' }}>
       <Container className="py-5">
         <Row className="g-4 d-flex align-items-stretch">

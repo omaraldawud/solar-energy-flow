@@ -29,7 +29,7 @@ const Home: React.FC = () => {
         }
         imageUrl="/images/solar-panel/residential-solar-installation.jpg"
         imageAlt="Solar Ideas for Better Planet"
-        cardTitle="Free Aurora Design & Full Estimate"
+        cardTitle="Free Solar System Design & Estimate"
       />
       {/* <HowItWorks /> */}
       <HowItWorksProcess />
