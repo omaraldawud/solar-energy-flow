@@ -8,7 +8,7 @@ const AirtableForm = () => {
         className="airtable-embed"
         src="https://airtable.com/embed/app7xvGRU8J3hHsTe/pagYiOrGoxS4mTxBl/form"
         width="100%"
-        height="533"
+        height="700"
         style={{ 
             background: 'transparent', 
             border: '2px solid #E3E1A9',

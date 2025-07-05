@@ -19,28 +19,26 @@ const FreeDesignPage = () => {
         ogImage="https://solarenergyflow.net/images/free-solar-og.jpg" // add this image!
       />
 
-    <div className="fullscreen-bg">
-        <Header />
-            <Hero
-                title="FREE Custom Solar System Designs for a Brighter Tomorrow"
-                subtitle1="Solar Systems Designed & Delivered By Experts"
-                subtitle2="Smart Energy: For a Sustainable Future."
-                description={
-                    <>
-                    Unlock the benefits of clean energy with our expert <strong>solar system design services</strong>. 
-                    At Solar Energy Flow, we deliver custom-designed, high-performance solar solutions tailored to your energy needs and property layout. 
-                    From initial concept to final installation, our experienced Minnesota-based team is here to help you transition to a smarter, more sustainable energy future.
-                    </>
-                }
-                imageUrl="/images/solar-panel/residential-solar-installation.jpg"
-                imageAlt="Expert Solar System Design in Minnesota"
-                cardTitle="Request Your Free Design & Estimate"
-                />
-
-        <Footer />
-      </div>
-    </>
-  );
+      <Header />
+      <Hero
+          title="FREE Custom Solar System Designs for a Brighter Tomorrow"
+          subtitle1="Solar Systems Designed & Delivered By Experts"
+          subtitle2="Smart Energy: For a Sustainable Future."
+          description={
+              <>
+              Unlock the benefits of clean energy with our expert <strong>solar system design services</strong>. 
+              At Solar Energy Flow, we deliver custom-designed, high-performance solar solutions tailored to your energy needs and property layout. 
+              From initial concept to final installation, our experienced Minnesota-based team is here to help you transition to a smarter, more sustainable energy future.
+              </>
+          }
+          imageUrl="/images/solar-panles/solar-grid.jpg"
+          imageAlt="Expert Solar System Design in Minnesota"
+          cardTitle="Request Your Free Design & Estimate"
+          iconClass='fas fa-drafting-compass'
+          />
+      <Footer />
+  </>
+);
 };
 
 export default FreeDesignPage;

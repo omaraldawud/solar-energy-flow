@@ -48,9 +48,9 @@ const Header: React.FC = () => {
                 <MainNavigation />
               </Row>
               <Row>
-                <Col className="d-flex justify-content-center pt-4">
-                    <a href={`tel:${COMPANY_PHONE_LINK}`} className="text-decoration-none">
-                        <button className="btn btn-outline-light d-inline-flex align-items-center px-4 py-3 cta-light-btn">
+                <Col className="d-flex justify-content-center">
+                    <a href={`tel:${COMPANY_PHONE_LINK}`}>
+                        <button className="btn btn-outline-light fs-3 fw-bold d-inline-flex align-items-center px-4 py-3">
                           <FaPhone size={20} className="me-3" />
                           {COMPANY_PHONE_DISPLAY}
                         </button>

@@ -14,32 +14,29 @@
 
 /* Hover effect */
 .black-card:hover {
-  background-color: #f0f0f0;
+  background-color: #424242;
   color: #000;
   cursor: pointer;
 }
 
-/* Ensure text colors inside update on hover */
-.black-card:hover .card-title,
-.black-card:hover .card-description {
-  color: #000 !important;
-}
 
 .black-card:hover .learn-more {
   color: #2a7f00 !important;
 }
 
-/* Other classes */
-.icon-wrapper {
-  margin-bottom: 20px;
-}
-
+/* Other classes h3 is card-title */
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 16px;
   color: #fff;
   transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Acumin Pro Semi Bold", Sans-serif;
+}
+
+.black-card h4 {
+  font-size: 1.2rem;
 }
 
 .card-description {
@@ -61,4 +58,20 @@
 .learn-more .arrow {
   margin-left: 8px;
   font-size: 1.2rem;
+}
+
+.black-box-items {
+  font-size: 12px;
+  color:  #ccc;
+}
+
+.feature-list li {
+  font-size: 1.5rem;     /* or use 15px */
+  color: #316E62;            /* or any color */
+  line-height: 1.6;
+}
+
+.feature-list i {
+  color: #198754; /* teal accent for icons */
+  font-size: 1.1rem;       /* tweak icon size if needed */
 }

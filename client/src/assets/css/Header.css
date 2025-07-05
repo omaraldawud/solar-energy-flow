@@ -99,3 +99,12 @@
   color: #333333;
   text-decoration: none;
 }
+
+.fullscreen-bg {
+  width: 100vw;
+  height: 100vh; /* full viewport height */
+  background: url('/images/solar-battery-system-bg.webp') center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

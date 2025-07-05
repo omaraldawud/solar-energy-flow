@@ -30,9 +30,10 @@ const Home: React.FC = () => {
               From concept to connection, we’re your partner in building a sustainable future.
             </>
           }
-          imageUrl="/images/solar-panel/residential-solar-installation.jpg"
-          imageAlt="Expert Solar System Design in Minnesota"
-          cardTitle="Request Your Free Design & Estimate"
+          imageUrl="/images/solar-panles/residential-solar-installation.jpg"
+          imageAlt="Expert Solar System Design Engineers"
+          cardTitle="Contact a Solar EXPERT"
+          iconClass='fas fa-solar-panel'
         />
 
       {/* <HowItWorks /> */}
