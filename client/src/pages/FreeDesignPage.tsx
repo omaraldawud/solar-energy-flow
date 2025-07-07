@@ -4,7 +4,12 @@ import Header from '../components/Header';
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Footer from '../components/Footer';
-import Hero from '@/components/Hero';
+import Hero from '@/components/forms-cta-cards/Hero';
+import PartnerBanner from '@/components/forms-cta-cards/PartnerBanner';
+import FormCard from '@/components/forms-cta-cards/FormCard';
+
+const cardTitle = 'Get a Free Quote';
+const iconClass = 'fas fa-solar-panel';
 
 const FreeDesignPage = () => {
   return (
@@ -20,22 +25,20 @@ const FreeDesignPage = () => {
       />
 
       <Header />
-      <Hero
-          title="FREE Custom Solar System Designs for a Brighter Tomorrow"
-          subtitle1="Solar Systems Designed & Delivered By Experts"
-          subtitle2="Smart Energy: For a Sustainable Future."
-          description={
-              <>
-              Unlock the benefits of clean energy with our expert <strong>solar system design services</strong>. 
-              At Solar Energy Flow, we deliver custom-designed, high-performance solar solutions tailored to your energy needs and property layout. 
-              From initial concept to final installation, our experienced Minnesota-based team is here to help you transition to a smarter, more sustainable energy future.
-              </>
-          }
-          imageUrl="/images/solar-panles/solar-grid.jpg"
-          imageAlt="Expert Solar System Design in Minnesota"
-          cardTitle="Request Your Free Design & Estimate"
-          iconClass='fas fa-drafting-compass'
-          />
+      <Container className="my-5">
+          <Row >
+            <Col md={8}>
+              <div className="p-4 h-100 shadow rounded bg-dark text-white">
+                <PartnerBanner />
+              </div>
+            </Col>
+            <Col md={4}>          
+              <div className="p-4 h-100 shadow rounded bg-dark">
+                    <FormCard cardTitle={cardTitle} iconClass={iconClass} />
+              </div>
+            </Col> 
+          </Row>
+      </Container>
       <Footer />
   </>
 );

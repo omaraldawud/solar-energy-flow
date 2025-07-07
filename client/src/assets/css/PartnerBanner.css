@@ -1,0 +1,19 @@
+.partner-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('/images/solar-panles/Solar-Panels-Close-Up-Greyscale.webp');
+  background-size: cover;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.text-teal {
+  color: #007c7d;
+}
+
+.border-teal {
+  border-color: #00b4b6 !important;
+}
+
+.text-success-custom {
+  color: #a1d61d; /* hex close to Bootstrap's text-success */
+}

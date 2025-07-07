@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Components
-import Hero from '../components/Hero';
+import Hero from '../components/forms-cta-cards/Hero';
 import HeaderTop from '../components/Header';
 import Footer from '../components/Footer';
 import SolarServices from '../components/SolarServices';

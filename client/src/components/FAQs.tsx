@@ -31,7 +31,7 @@ export const FAQs = () => (
       <Tabs
         defaultActiveKey="solar"
         id="faq-tabs"
-        className="mb-3 justify-content-start"
+        className="mb-3 d-flex flex-wrap justify-content-start"
       >
         <Tab eventKey="solar" title="Solar Energy">
           {renderFAQList(solarFaqs)}
