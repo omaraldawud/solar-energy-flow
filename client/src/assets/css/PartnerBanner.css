@@ -6,14 +6,13 @@
   color: #fff;
 }
 
-.text-teal {
-  color: #007c7d;
-}
-
-.border-teal {
-  border-color: #00b4b6 !important;
-}
 
 .text-success-custom {
   color: #a1d61d; /* hex close to Bootstrap's text-success */
+}
+
+.blockquote {
+  border-left: 15px solid #198754;
+  padding: 1rem;
+  margin: 40px 0;
 }

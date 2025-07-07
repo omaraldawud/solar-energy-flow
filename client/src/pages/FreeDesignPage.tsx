@@ -30,11 +30,25 @@ const FreeDesignPage = () => {
             <Col md={8}>
               <div className="p-4 h-100 shadow rounded bg-dark text-white">
                 <PartnerBanner />
+                <blockquote className="blockquote ps-3 border-start border-success">
+                   <h4>
+                      Sustainable Prodcuts & Sourcing
+                  </h4>
+                  <p  className="text-success mb-4 fst-italic">
+                      Going Solar has never been easier!<br />
+                  </p>
+                  <p>
+                      We source out Tier 1 solar panels directly from trusted manufacturers.
+                      Our products meet the highest standards for performance, durability, and long-term reliability.
+                  </p>
+                  <footer className="blockquote-footer text-muted mt-1">Your journey to energy independence starts here</footer>
+                </blockquote>
               </div>
+
             </Col>
             <Col md={4}>          
               <div className="p-4 h-100 shadow rounded bg-dark">
-                    <FormCard cardTitle={cardTitle} iconClass={iconClass} />
+                <FormCard cardTitle={cardTitle} iconClass={iconClass} />
               </div>
             </Col> 
           </Row>
