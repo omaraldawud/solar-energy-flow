@@ -1,5 +1,4 @@
 // src/components/AirtableForm.tsx
-import React from 'react';
 
 const AirtableForm = () => {
   return (

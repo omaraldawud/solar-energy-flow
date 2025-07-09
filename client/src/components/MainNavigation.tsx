@@ -15,13 +15,9 @@ const MainNavigation: React.FC = () => {
                         <NavDropdown.Item href="#commercial">Commercial</NavDropdown.Item>
                         <NavDropdown.Item href="#partners">Partners</NavDropdown.Item>
                       </NavDropdown>
-                      <NavDropdown title="Education" id="education-dropdown">
-                        <NavDropdown.Item href="#faqs">FAQs</NavDropdown.Item>
-                        <NavDropdown.Item href="#benefits">Benefits</NavDropdown.Item>
-                      </NavDropdown>
                       <NavDropdown title="Contact" id="contact-dropdown">
                         <NavDropdown.Item href="/free-solar-system-design">Contact Us</NavDropdown.Item>
-                        <NavDropdown.Item href="#about">About</NavDropdown.Item>
+                        <NavDropdown.Item href="#about">About Us</NavDropdown.Item>
                       </NavDropdown>
                     </Nav>
                   </Navbar.Collapse>

@@ -19,7 +19,7 @@ const FormCard: React.FC<FormCardProps> = ({
     }}
   >
     <h3 className="h5 mb-4 text-center" style={{ color: 'rgb(0 255 192)' }}>
-      <i className={`${iconClass} me-2 text-white`} /> {cardTitle}
+      <i className={`${iconClass} me-2`} /> {cardTitle}
     </h3>
     <AirtableForm />
   </div>

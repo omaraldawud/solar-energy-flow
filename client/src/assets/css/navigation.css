@@ -10,7 +10,7 @@
   color: #f8f9fa;
   font-weight: bold;
   padding: 6px 12px;
-  border-bottom: 1px solid #495057; /* subtle separator line */
+  border-bottom: 2px solid #495057; /* subtle separator line */
 }
 
 /* Optional: slight hover effect */

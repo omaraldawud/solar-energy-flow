@@ -70,6 +70,10 @@ export const designFaqs = [
     question: 'Who signs off on the final system design?',
     answer: 'A NABCEP-certified engineer reviews and approves every system design before permitting.',
   },
+  {
+    "question": "What is included in your solar system design service?",
+    "answer": "Our solar system design service includes a customized solar energy solution tailored to your property. We assess your energy needs, analyze roof space or ground area, design an optimal panel layout, calculate system size, provide equipment recommendations, and generate a performance estimate. The final design includes detailed schematics, shading analysis, and financial projections."
+  },
 ];
 
 export const SolarIncentivesFAQs = [
@@ -98,4 +102,27 @@ export const SolarIncentivesFAQs = [
     answer:
       "To claim the Federal Solar Tax Credit, you must file IRS Form 5695 with your tax return. It's recommended to consult a tax professional to ensure proper documentation and compliance.",
   },
+];
+
+export const SolarPanelInstallationFAQs = [
+  {
+    "question": "Do you consider shading and roof orientation in the design?",
+    "answer": "Yes! We use advanced solar modeling software (like Aurora, PVsyst, or Helioscope) to analyze shading from trees, buildings, or obstructions. We optimize panel placement based on roof angle, orientation (south-facing is ideal in the Northern Hemisphere), and local weather patterns to maximize energy production."
+  },
+  {
+    question: 'How long does a typical solar panel installation take?',
+    answer: 'Most residential installations are completed in 1-3 days, depending on system size and complexity. Commercial projects may take 1-2 weeks. This doesn\'t include permitting and inspections which can add several weeks to the process.'
+  },
+  {
+    question: 'Will my electricity be interrupted during installation?',
+    answer: 'We typically coordinate a brief shutdown (2-4 hours) to connect your system safely. We\'ll schedule this at your convenience and provide advance notice. Your power will remain on until the final interconnection is approved by your utility.'
+  },
+  {
+    question: 'What roof preparations are needed before installation?',
+    answer: 'We require a structurally sound roof with at least 10-15 years of remaining life. Any necessary repairs should be completed beforehand. Our team will verify roof condition during the site assessment and recommend any needed reinforcements.'
+  },
+  {
+    question: 'Do you handle all the necessary permits and inspections?',
+    answer: 'Yes, our team manages the entire permitting process including utility interconnection applications, building permits, and scheduling inspections. We stay current with all local regulations to ensure compliance.'
+  }
 ];

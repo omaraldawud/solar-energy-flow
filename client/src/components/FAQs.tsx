@@ -1,8 +1,16 @@
 import { Tabs, Tab, Container } from 'react-bootstrap';
-import { solarFaqs, installerFaqs, designFaqs, SolarIncentivesFAQs } from '../data/faqData';
-import '../assets/css/FAQs.css'
-
 import Accordion from 'react-bootstrap/Accordion';
+import { FaSun, FaUserCog, FaSolarPanel, FaRulerCombined, FaPiggyBank } from 'react-icons/fa';
+
+import {  solarFaqs, 
+          installerFaqs, 
+          designFaqs, 
+          SolarIncentivesFAQs, 
+          SolarPanelInstallationFAQs
+      } from '../data/faqData';
+
+      import '../assets/css/FAQs.css'
+
 
 const renderFAQList = (faqs: any[]) => (
   <Accordion defaultActiveKey="">
@@ -33,17 +41,58 @@ export const FAQs = () => (
         id="faq-tabs"
         className="mb-3 d-flex flex-wrap justify-content-start"
       >
-        <Tab eventKey="solar" title="Solar Energy">
+        <Tab eventKey="solar" 
+            title={
+              <span>
+                    <FaSun  className="text-warning me-2" />
+                    Solar Energy
+              </span>
+            }
+          >
           {renderFAQList(solarFaqs)}
         </Tab>
-        <Tab eventKey="installers" title="Installer Partners">
+        <Tab  eventKey="installers" 
+              title={
+                <span>
+                  <FaUserCog className="me-2" />
+                  Installer Partners
+                </span>
+          }
+        >
           {renderFAQList(installerFaqs)}
         </Tab>
-        <Tab eventKey="design" title="System Design">
+        <Tab  eventKey="design" 
+              title={
+                <span>
+                  <FaRulerCombined className="me-2" />
+                  System Design
+                </span>
+               }
+          >
+                
           {renderFAQList(designFaqs)}
         </Tab>
-        <Tab eventKey="incentives" title="Solar Incentives">
+        <Tab eventKey="incentives" 
+            title={
+                <span>
+                  <FaPiggyBank className="me-2" />
+                  Solar Incentives
+                </span>
+               }
+            >  
           {renderFAQList(SolarIncentivesFAQs)}
+        </Tab>
+        
+        <Tab  eventKey="installation" 
+              title={
+              <span>
+                  <FaSolarPanel className="me-2" />
+                  Solar Panel Installation
+                </span>
+              }
+        >
+              
+          {renderFAQList(SolarPanelInstallationFAQs)}
         </Tab>
       </Tabs>
     </Container>

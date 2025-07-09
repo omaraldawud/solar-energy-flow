@@ -8,7 +8,7 @@ import Hero from '@/components/forms-cta-cards/Hero';
 import PartnerBanner from '@/components/forms-cta-cards/PartnerBanner';
 import FormCard from '@/components/forms-cta-cards/FormCard';
 
-const cardTitle = 'Get a Free Quote';
+const cardTitle = 'Free Solar System Design';
 const iconClass = 'fas fa-solar-panel';
 
 const FreeDesignPage = () => {
@@ -31,9 +31,7 @@ const FreeDesignPage = () => {
               <div className="p-4 h-100 shadow rounded bg-dark text-white">
                 <PartnerBanner />
                 <blockquote className="blockquote ps-3 border-start border-success">
-                   <h4>
-                      Sustainable Prodcuts & Sourcing
-                  </h4>
+                  <h4>Sustainable Prodcuts & Sourcing</h4>
                   <p  className="text-success mb-4 fst-italic">
                       Going Solar has never been easier!<br />
                   </p>
