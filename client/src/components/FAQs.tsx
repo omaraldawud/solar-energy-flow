@@ -44,7 +44,7 @@ export const FAQs = () => (
         <Tab eventKey="solar" 
             title={
               <span>
-                    <FaSun  className="text-warning me-2" />
+                    <FaSun  className="me-2" style={{ color: "yellow" }} />
                     Solar Energy
               </span>
             }
@@ -54,7 +54,7 @@ export const FAQs = () => (
         <Tab  eventKey="installers" 
               title={
                 <span>
-                  <FaUserCog className="me-2" />
+                  <FaUserCog className="me-2" style={{ color: "yellow" }} />
                   Installer Partners
                 </span>
           }
@@ -64,7 +64,7 @@ export const FAQs = () => (
         <Tab  eventKey="design" 
               title={
                 <span>
-                  <FaRulerCombined className="me-2" />
+                  <FaRulerCombined className="me-2 text-primary"/>
                   System Design
                 </span>
                }
@@ -75,7 +75,7 @@ export const FAQs = () => (
         <Tab eventKey="incentives" 
             title={
                 <span>
-                  <FaPiggyBank className="me-2" />
+                  <FaPiggyBank className="me-2 text-success" />
                   Solar Incentives
                 </span>
                }
@@ -86,7 +86,7 @@ export const FAQs = () => (
         <Tab  eventKey="installation" 
               title={
               <span>
-                  <FaSolarPanel className="me-2" />
+                  <FaSolarPanel className="me-2 text-dark" />
                   Solar Panel Installation
                 </span>
               }
