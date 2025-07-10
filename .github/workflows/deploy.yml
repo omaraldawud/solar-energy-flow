@@ -39,7 +39,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./client/dist/
           server-dir: /
-          dangerous-clean-slate: true
           exclude: |
             images/**
             server/**
