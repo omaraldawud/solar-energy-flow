@@ -131,10 +131,10 @@ const Footer: React.FC = () => {
         marginRight: '-50vw'
       }} className="py-2 text-center text-white small">
         <span>
-          &copy; {new Date().getFullYear()} {COMPANY_NAME}. Designed and maintained by{' '}
+          &copy; {new Date().getFullYear()} {COMPANY_NAME}. {' '}
           <a href="https://hostitwise.com" target="_blank" rel="noopener noreferrer" 
              className="text-white text-decoration-underline">
-            Hostitwise.com
+            Designed and maintained by Hostitwise.com
           </a>
         </span>
       </div>
