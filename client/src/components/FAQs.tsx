@@ -44,7 +44,7 @@ export const FAQs = () => (
         <Tab eventKey="solar" 
             title={
               <span>
-                    <FaSun  className="me-2" style={{ color: "yellow" }} />
+                    <FaSun  className="me-2 text-dark"/>
                     Solar Energy
               </span>
             }
@@ -54,7 +54,7 @@ export const FAQs = () => (
         <Tab  eventKey="installers" 
               title={
                 <span>
-                  <FaUserCog className="me-2" style={{ color: "yellow" }} />
+                  <FaUserCog className="me-2 text-dark"/>
                   Installer Partners
                 </span>
           }
@@ -64,25 +64,14 @@ export const FAQs = () => (
         <Tab  eventKey="design" 
               title={
                 <span>
-                  <FaRulerCombined className="me-2 text-primary"/>
+                  <FaRulerCombined className="me-2 text-dark"/>
                   System Design
                 </span>
                }
           >
                 
           {renderFAQList(designFaqs)}
-        </Tab>
-        <Tab eventKey="incentives" 
-            title={
-                <span>
-                  <FaPiggyBank className="me-2 text-success" />
-                  Solar Incentives
-                </span>
-               }
-            >  
-          {renderFAQList(SolarIncentivesFAQs)}
-        </Tab>
-        
+        </Tab>        
         <Tab  eventKey="installation" 
               title={
               <span>
@@ -93,6 +82,16 @@ export const FAQs = () => (
         >
               
           {renderFAQList(SolarPanelInstallationFAQs)}
+        </Tab>
+                <Tab eventKey="incentives" 
+            title={
+                <span>
+                  <FaPiggyBank className="me-2 text-success"/>
+                  Solar Incentives
+                </span>
+               }
+            > 
+          {renderFAQList(SolarIncentivesFAQs)}
         </Tab>
       </Tabs>
     </Container>

@@ -34,13 +34,18 @@ const Header: React.FC = () => {
             <Col xs={12} md={4} className="d-flex align-items-center mt-3 mt-md-0">
                 <div className="text-center w-100">
                   <p 
-                    className="fw-bold fs-5 mb-0"
+                    className="fw-bold fs-5 mb-0 d-flex justify-content-center align-items-center"
                     style={{ color: '#E3E1A9' }}>
-                    <FaSun className="me-3" color="gold" />
+                    <img 
+                      src="/images/energy-seeding.png" 
+                      alt="Energy Seeding" 
+                      className="me-3"
+                      style={{ width: '24px', height: '24px', objectFit: 'cover' }}
+                    />
                     Join Us in Making a Difference!
                   </p>
-
                 </div>
+
             </Col>
             {/* Navigation */}
             <Col xs={12} md={5} className="mt-3 mt-md-0">
@@ -48,10 +53,10 @@ const Header: React.FC = () => {
                 <MainNavigation />
               </Row>
               <Row>
-                <Col className="d-flex justify-content-center">
+                <Col className="d-flex justify-content-end">
                     <a href={`tel:${COMPANY_PHONE_LINK}`}>
-                        <button className="btn btn-outline-light fs-3 fw-bold d-inline-flex align-items-center px-4 py-3">
-                          <FaPhone size={20} className="me-3" />
+                        <button className="btn  fs-3 fw-bold d-inline-flex align-items-center px-4 py-3">
+                          <FaPhone size={40} className="me-3 text-warning" />
                           {COMPANY_PHONE_DISPLAY}
                         </button>
                     </a>
