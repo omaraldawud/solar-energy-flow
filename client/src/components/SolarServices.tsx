@@ -1,4 +1,6 @@
 import { Row, Col, Card } from "react-bootstrap";
+import { BookmarkButton } from './components/BookmarkButton';
+
 import {
   FaHome,
   FaBuilding,
@@ -21,7 +23,7 @@ const iconMap: Record<string, JSX.Element> = {
 
 const SolarServices = () => {
   return (
-    <div className="container my-5">
+    <div id="solar-services" className="container my-5">
       <Row>
         {solarServicesData.map((service) => (
           <Col key={service.id} md={4} className="mb-4">

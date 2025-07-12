@@ -1,10 +1,9 @@
 // Example navigation data; you can import this from another file too
 const navFooterLinksMain = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/about-us", label: "About" },
+  { href: "/#solar-servicesces", label: "Services" },
+  { href: "/free-solar-system-design", label: "Contact" },
 ];
 
 const FooterMainNav: React.FC = () => {
@@ -15,7 +14,7 @@ const FooterMainNav: React.FC = () => {
         gap: "20px",
         paddingLeft: 0,
         listStyle: "none",
-        margin: "1rem 0 0 0",
+        margin: "0 0 0 0",
       }}
     >
       {navFooterLinksMain.map(({ href, label }) => (
@@ -23,7 +22,7 @@ const FooterMainNav: React.FC = () => {
           <a
             href={href}
             style={{ fontSize: "12px" }}
-            className="text-white text-decoration-none hover-gold"
+            className="text-success text-decoration-none"
           >
             {label}
           </a>

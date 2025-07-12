@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                 style={{ maxWidth: '180px' }}
                 className="mb-1"
               />
-              <p>{COMPANY_ADDRESS} </p>
+              <p className='mt-4' style={{ color: '#D6D492' }}>{COMPANY_ADDRESS}</p>
               <FaPhone size={28} className="me-3" color='#E3E1A9'/>
               <a 
                 className="text-white text-decoration-none" 
@@ -48,13 +48,7 @@ const Footer: React.FC = () => {
                   </a>
               </div>
                   <FooterSocialInfo />
-                  <p className='mt-4' style={{ color: '#D6D492' }}>{COMPANY_ADDRESS}</p>
-                  <p className="mt-5" >
-                    <em>
-                      At {COMPANY_NAME}, we provide expert solar panel system design & installation.
-                    </em>
-                  </p>
-                  <FooterMainNav />
+                  
             </Col>
             {/* Services Links */}
             <Col md={4} className="mb-3">
@@ -102,38 +96,39 @@ const Footer: React.FC = () => {
               <h5 className="text-warning">Solar Commuity Programs</h5>
               <p className="fs-6"><strong>Solar Community Programs</strong> provide access to renewable energy and potential savings on electricity bills for households unable to install solar panels.</p>
               <ul className="red-bullets ps-3">
-              {navCommunityPrograms.map(({ href, label }) => (
-                <li key={href} className="mb-2">
-                  <a 
-                    href={href} 
-                    style={{ fontSize: '12px' }} 
-                    className="text-white text-decoration-none hover-gold"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-
+                  {navCommunityPrograms.map(({ href, label }) => (
+                    <li key={href} className="mb-2">
+                      <a 
+                        href={href} 
+                        style={{ fontSize: '12px' }} 
+                        className="text-white text-decoration-none"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
             </Col>
           </Row>
         </Container>
       </footer>
 
       {/* Bottom Bar */}
-      <div style={{ 
-        backgroundColor: '#2A3037',
-        maxWidth: '100vw',
-        position: 'relative',
-        left: '50%',
-        right: '50%',
-        marginLeft: '-50vw',
-        marginRight: '-50vw'
-      }} className="py-2 text-center text-white small">
-        <span>
-          &copy; {new Date().getFullYear()} {COMPANY_NAME}. {' '}
-          <a href="https://hostitwise.com" target="_blank" rel="noopener noreferrer" 
-             className="text-white text-decoration-underline">
+      <div 
+        style={{ backgroundColor: '#2A3037', maxWidth: '100vw' }} 
+        className="py-2 text-white small d-flex flex-wrap align-items-center justify-content-center gap-3"
+      >
+        <FooterMainNav />
+        <em className="mb-0">At {COMPANY_NAME}, we provide expert solar panel system design & installation.</em>
+        
+        <span className="mb-0 text-secondary ">
+          &copy; {new Date().getFullYear()} {COMPANY_NAME}.{' '}
+          <a 
+            href="https://hostitwise.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-secondary ms-2 text-decoration-underline"
+          >
             Designed and maintained by Hostitwise.com
           </a>
         </span>

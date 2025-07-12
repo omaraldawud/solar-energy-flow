@@ -10,62 +10,54 @@ import { COMPANY_NAME , COMPANY_PHONE_DISPLAY, COMPANY_PHONE_LINK }
 
 const Header: React.FC = () => {
   return (
-    <header 
-      className="sticky-top bg-tealgreen text-white py-2 shadow-sm w-100"
-      >
-        <Container>
-          <Row className="align-items-center">
+    <header className="sticky-top bg-tealgreen text-white py-2 shadow-sm w-100">
+      <Container>
+        {/* First Row: Logo, Title, and Navigation */}
+        <Row className="align-items-center">
+          {/* Col 1: Logo & Title */}
+          <Col xs={12} md={3} className="d-flex align-items-center">
+            <a href="/">
+              <img
+                src="/images/SolarEnergyFlow-Logo.png"
+                alt="Solar Energy Flow Logo"
+                style={{ maxWidth: '120px' }}
+                className="me-2"
+              />
+            </a>
+            <h1 className="fs-5 fw-bold d-md-block mb-0">
+              {COMPANY_NAME}
+            </h1>
+          </Col>
 
-            {/* Logo & Title */}
-            <Col xs={12} md={3} className="d-flex align-items-center">
-              <a href="/">  {/* Link to home page */}
-                <img
-                  src="/images/SolarEnergyFlow-Logo.png"
-                  alt="Solar Energy Flow Logo"
-                  style={{ maxWidth: '120px' }}
-                  className="me-2"
-                />
-                </a>
-                <h1 className="fs-5 fw-bold  d-md-block">
-                  {COMPANY_NAME}
-                </h1>
-            </Col>
-
-            <Col xs={12} md={4} className="d-flex align-items-center mt-3 mt-md-0">
-                <div className="text-center w-100">
+          {/* Col 2: Join us & Phone */}
+          <Col md={4}>
+            <Row className="mt-2">
+              <Col xs={12} md={12} className='ms-5 fs-5 text-warning'>
                   <p 
-                    className="fw-bold fs-5 mb-0 d-flex justify-content-center align-items-center"
-                    style={{ color: '#E3E1A9' }}>
-                    <img 
-                      src="/images/energy-seeding.png" 
-                      alt="Energy Seeding" 
-                      className="me-3"
-                      style={{ width: '24px', height: '24px', objectFit: 'cover' }}
-                    />
+                    style={{}}>
                     Join Us in Making a Difference!
                   </p>
-                </div>
-
-            </Col>
-            {/* Navigation */}
-            <Col xs={12} md={5} className="mt-3 mt-md-0">
+              </Col>
               <Row>
-                <MainNavigation />
-              </Row>
-              <Row>
-                <Col className="d-flex justify-content-end">
+                <Col>
                     <a href={`tel:${COMPANY_PHONE_LINK}`}>
-                        <button className="btn  fs-3 fw-bold d-inline-flex align-items-center px-4 py-3">
-                          <FaPhone size={40} className="me-3 text-warning" />
-                          {COMPANY_PHONE_DISPLAY}
-                        </button>
+                      <button className="btn fs-2 text-white fw-bold d-inline-flex align-items-center">
+                        <FaPhone size={40} className="me-3 text-warning" />
+                        {COMPANY_PHONE_DISPLAY}
+                      </button>
                     </a>
                 </Col>
               </Row>
-            </Col>
-          </Row>
-        </Container>
-      </header>
+            </Row>
+          </Col>
+
+          {/* Navigation */}
+          <Col xs={12} md={5} className="mt-3 mt-md-0">
+            <MainNavigation />
+          </Col>
+        </Row>
+      </Container>
+    </header>
   );
 };
 

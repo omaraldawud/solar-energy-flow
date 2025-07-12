@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Hero from '@/components/forms-cta-cards/Hero';
 import PartnerBanner from '@/components/forms-cta-cards/PartnerBanner';
 import FormCard from '@/components/forms-cta-cards/FormCard';
+import { HeroMotto } from '@/components/about';
 
 const cardTitle = 'Free Solar System Design';
 const iconClass = 'fas fa-solar-panel';
@@ -25,6 +26,15 @@ const FreeDesignPage = () => {
       />
 
       <Header />
+            <div className="hero-section bg-primary text-white py-2">
+              <div className="container py-4">
+                <HeroMotto 
+                  title ="Your Solar Questions Answered"
+                  subtitle="Speak with our energy experts:  +1 (218) 460 - 9057"
+                  tagline="Empowering you, one ray at a time"
+                />
+              </div>
+            </div>
       <Container className="my-5">
           <Row >
             <Col md={8}>

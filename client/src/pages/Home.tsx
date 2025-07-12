@@ -37,7 +37,7 @@ const Home: React.FC = () => {
         />
 
       {/* <HowItWorks /> */}
-      <HowItWorksProcess />
+      <HowItWorksProcess variant="full"/>
       <SolarServices />
       <FAQs />
       <Footer />
