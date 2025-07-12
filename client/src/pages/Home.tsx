@@ -2,20 +2,29 @@ import React from 'react';
 
 //Components
 import Hero from '../components/forms-cta-cards/Hero';
-import HeaderTop from '../components/Header';
-import Footer from '../components/Footer';
-import SolarServices from '../components/SolarServices';
+import HeaderTop from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import SolarServices from '../components/home/SolarServices';
 import { FAQs } from '../components/FAQs';
-import { HowItWorksProcess } from '../components/HowItWorksProcess';
+import { HowItWorksProcess } from '../components/forms-cta-cards/HowItWorksProcess';
 
 
 //Style Sheets
 import '../assets/css/Header.css'; 
 import { HeroMotto } from '@/components/about';
+import SEO from '@/components/seo/SEO';
 
 
 const Home: React.FC = () => {
   return (
+    <>
+      <SEO
+        title="Solar Energy Flow | Expert Solar Panel Design & Installation "
+        description="Minnesota's trusted solar company offering custom solar panel design & installation. Reduce energy bills with high-efficiency systems. Free consultations!"        keywords="free solar design, custom solar quote, solar panel estimate"
+        ogTitle="Minnesota Solar Panel Experts | Solar Energy Flow"
+        ogDescription="Get premium solar solutions from Minnesota's top-rated installers. Cut energy costs with our 5-star solar panel systems. Free property assessment!"        ogUrl="https://solarenergyflow.net/free-design"
+        ogImage="https://solarenergyflow.net/images/free-solar-og.jpg" // add this image!
+      />
     <div className="app-container">
       <HeaderTop />
 
@@ -39,8 +48,6 @@ const Home: React.FC = () => {
               From concept to connection, we’re your partner in building a sustainable future.
             </>
           }
-          imageUrl="/images/solar-panles/residential-solar-installation.jpg"
-          imageAlt="Expert Solar System Design Engineers"
           cardTitle="Contact a Solar EXPERT"
           iconClass='fas fa-solar-panel'
         />
@@ -50,7 +57,9 @@ const Home: React.FC = () => {
       <SolarServices />
       <FAQs />
       <Footer />
+
     </div>
+           </>
   );
 };
 

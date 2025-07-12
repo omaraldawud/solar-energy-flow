@@ -1,9 +1,9 @@
 import React from 'react';
-import SEO from '../components/seo-components/SEO'; 
-import Header from '../components/Header';
+import SEO from '../components/seo/SEO'; 
+import Header from '../components/header/Header';
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import Footer from '../components/Footer';
+import Footer from '../components/footer/Footer';
 import Hero from '@/components/forms-cta-cards/Hero';
 import PartnerBanner from '@/components/forms-cta-cards/PartnerBanner';
 import FormCard from '@/components/forms-cta-cards/FormCard';

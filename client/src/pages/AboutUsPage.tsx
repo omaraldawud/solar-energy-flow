@@ -1,19 +1,21 @@
 // src/pages/AboutUsPage.tsx
 import { HeroMotto, MissionSection, WhoWeAreCard, CTASection } from '@/components/about';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import { HowItWorksProcess } from '@/components/HowItWorksProcess';
-import SEO from '@/components/seo-components/SEO';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/Header';
+import { HowItWorksProcess } from '@/components/forms-cta-cards/HowItWorksProcess';
+import SEO from '@/components/seo/SEO';
 
 export const AboutUsPage = () => {
   return (
         <>
       <SEO
-        title="Free Solar System Design | Solar Energy Flow"
-        description="Get a free custom solar system design for your home or business. No obligation. Start saving with clean energy today!"
-        keywords="free solar design, custom solar quote, solar panel estimate"
-        ogTitle="Claim Your Free Solar System Design"
-        ogDescription="Let our experts design a personalized solar system for your property—completely free."
+        title="About Solar Energy Flow | Minnesota's Trusted Solar Installers"
+
+        description="Meet the team behind Solar Energy Flow - Minnesota's premier solar panel installation experts. Learn about our mission to deliver affordable, high-efficiency solar solutions."
+keywords="about solar company, solar installers Minnesota, solar energy experts, renewable energy team, solar company mission"
+
+        ogTitle="Our Solar Story | Solar Energy Flow Minnesota"
+        ogDescription="Discover how Solar Energy Flow became Minnesota's top-rated solar installation company through quality workmanship and customer-focused service."
         ogUrl="https://solarenergyflow.net/free-design"
         ogImage="https://solarenergyflow.net/images/free-solar-og.jpg" // add this image!
       />

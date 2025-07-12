@@ -1,7 +1,7 @@
 import React from 'react';
 
 //CSS
-import '../assets/css/HowItWorks.css';
+import '../../assets/HowItWorks.css';
 
 type Step = {
   icon: React.ReactNode;

@@ -1,7 +1,7 @@
-import { SOCIAL_LINKS } from '../data/constants';
+import { SOCIAL_LINKS } from '../../data/constants';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
-import '../assets/css/FooterSocial.css';
+import '../../assets/css/FooterSocial.css';
 
 const FooterSocialInfo = () => {
   return (

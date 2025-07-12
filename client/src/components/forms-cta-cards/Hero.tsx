@@ -17,8 +17,6 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({
   title,
   description,
-  imageUrl,
-  imageAlt = 'Solar Ideas for Better Planet',
   cardTitle,
   iconClass,
 }) => {

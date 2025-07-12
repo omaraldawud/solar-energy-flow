@@ -1,6 +1,6 @@
 import React from 'react';
-import '../assets/css/HowItWorks.css';
-import { steps } from './steps';
+
+import { steps } from '../steps';
 
 interface HowItWorksProcessProps {
   variant?: 'full' | 'compact'; // Add variant prop
@@ -33,7 +33,7 @@ export const HowItWorksProcess: React.FC<HowItWorksProcessProps> = ({
             <div className="text-center">
               <p className="highlight-box">
                 <strong style={{color:'#1bbfff'}}>Featured Partnership:</strong> All installations are performed by our network of 
-                <strong> certified Minnesota solar installers</strong> for guaranteed quality.
+                <strong> certified solar installers</strong> for guaranteed quality.
               </p>
             </div>
           )}

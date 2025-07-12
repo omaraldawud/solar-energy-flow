@@ -4,51 +4,21 @@
   background-color: #316E62 !important; /* #13BBA7 Teal Green */
 }
 
-.bg-lightgreen {
-  background-color: #3ca1c9 !important;
-  color: #ffffff !important; /* White text for contrast */
-  border: 1px solid #004d00 !important; /* Slightly darker border */
-  border-radius: 6px; /* Soft rounded corners */
-  box-shadow: 
-    0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle drop shadow */
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
-  transition: all 0.2s ease; /* Smooth hover effects */
-}
-
-/* Hover effect for interactivity */
-.bg-lightgreen:hover {
-  background-color: #BCBA63 !important;
-  box-shadow: 
-    0 3px 6px rgba(0, 0, 0, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
-  transform: translateY(-1px); /* Slight lift */
-}
 
 
-.brand-text {
-  color: #FFC523; /* Yellow - matches flyer title color */
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Optional: Make phone CTA button rounded */
-.btn-warning {
-  background-color: #FFC523 !important;
-  border: none;
-  border-radius: 30px;
-  transition: background 0.3s ease;
-}
-
-.btn-warning:hover {
-  background-color: #316E62 !important; /* Orange on hover */
-}
-
-/* For Menu */
-.nav-link,
-.custom-dropdown .dropdown-item {
-  font-size: 0.95rem;
-  font-weight: 500; /* or 400 depending on your design */
+.navbar-nav .nav-link {
   color: #FFFFFF !important;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
+
+/* Change active state */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+
 
 /* Hover style for main nav links */
 .nav-link:hover,
@@ -56,55 +26,3 @@
   color: #FFC523 !important; /* Yellow on hover */
 }
 
-/* for submenu */
-/* Custom Dropdown Menu Styling */
-.custom-dropdown .dropdown-menu {
-  background-color: #316E62; /* Teal Green */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  border-radius: 8px;
-  padding: 0;
-}
-
-.custom-dropdown .dropdown-item {
-  font-size: 0.80rem; /* or 0.9rem to make it tighter */
-  padding: 8px 16px; /* Reduce padding to match main nav links */
-  color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.custom-dropdown .dropdown-item:hover,
-.custom-dropdown .dropdown-item:focus {
-  background-color: #FFC523 !important;
-  color: #000000 !important;
-}
-
-.cta-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  border-radius: 50px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding: 12px 28px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
-}
-
-.cta-btn:hover {
-  background-color: #ffffff;
-  color: #333333;
-  text-decoration: none;
-}
-
-.fullscreen-bg {
-  width: 100vw;
-  height: 100vh; /* full viewport height */
-  background: url('/images/solar-battery-system-bg.webp') center center / cover no-repeat;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
