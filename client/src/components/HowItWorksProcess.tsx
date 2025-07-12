@@ -12,7 +12,7 @@ export const HowItWorksProcess: React.FC<HowItWorksProcessProps> = ({
       }) => {
 
   return (
-    <section className="how-it-works mt-4" aria-label="Our Solar Panel System Installtion Process">
+    <section className="how-it-works mt-5 p-4" aria-label="Our Solar Panel System Installtion Process">
       <div className="container">
         <h2 className="mb-4 text-center">Our Solar Panel System Installtion Process</h2>
         <div className="row text-center">

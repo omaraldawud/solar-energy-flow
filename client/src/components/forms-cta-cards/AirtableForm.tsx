@@ -2,12 +2,12 @@
 
 const AirtableForm = () => {
   return (
-    <div className="airtable-form-container" style={{ width: '100%', margin: '0 auto' }}>
+
       <iframe
         className="airtable-embed"
         src="https://airtable.com/embed/app7xvGRU8J3hHsTe/pagYiOrGoxS4mTxBl/form"
         width="100%"
-        height="700"
+        height="500"
         style={{ 
             background: 'transparent', 
             border: '2px solid #E3E1A9',
@@ -16,7 +16,6 @@ const AirtableForm = () => {
         
         onWheel={() => {}} // Workaround for iframe wheel event
       ></iframe>
-    </div>
   );
 };
 

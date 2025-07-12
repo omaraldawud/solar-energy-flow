@@ -11,6 +11,7 @@ import { HowItWorksProcess } from '../components/HowItWorksProcess';
 
 //Style Sheets
 import '../assets/css/Header.css'; 
+import { HeroMotto } from '@/components/about';
 
 
 const Home: React.FC = () => {
@@ -18,11 +19,19 @@ const Home: React.FC = () => {
     <div className="app-container">
       <HeaderTop />
 
+      <div className="bg-primary text-white py-2">
+        <div className="container py-4">
+          <HeroMotto 
+            title ="Welcome to Solar Energy Flow"
+            subtitle="energy sourced directly from solar manufacturers "
+            tagline="DIRECT ENERGY"
+          />
+        </div>
+      </div>
+
       {/* Hero Section */}
       <Hero
-          title="Get Your Free Solar System Design"
-          subtitle1="Minnesota Solar System Design by Local Experts"
-          subtitle2="Custom Solar Plans for a Brighter Future"
+          title="Solar Ideas for Better Planet"
           description={
             <>
               At Solar Energy Flow, we specialize in <strong>custom solar system design</strong> for Minnesota homes and businesses. 
