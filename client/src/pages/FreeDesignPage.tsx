@@ -1,9 +1,10 @@
-import React from 'react';
-import SEO from '../components/seo/SEO'; 
-import Header from '../components/header/Header';
+//FreeDesignPage.tsx
+//
+import SEO from '@/components/seo/SEO'; 
+import Header from '@/components/header/Header';
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import Footer from '../components/footer/Footer';
+import Footer from '@/components/footer/Footer';
 import Hero from '@/components/cards/Hero';
 import PartnerBanner from '@/components/cards/PartnerBanner';
 import FormCard from '@/components/forms-cta/FormCard';

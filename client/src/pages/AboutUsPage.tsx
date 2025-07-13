@@ -48,7 +48,7 @@ keywords="about solar company, solar installers Minnesota, solar energy experts,
           </div>
         </div>
 
-        <HowItWorksProcess variant="compact"/>
+        <HowItWorksProcess variant="compact" title='About Our Solar Installation Process'/>
         
 
         {/* Final CTA Section */}
