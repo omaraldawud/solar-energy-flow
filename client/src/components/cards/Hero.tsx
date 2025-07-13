@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import InfoCard from './InfoCard';
-import BlackCard from '../forms-cta-cards/BlackCard';
-import FormCard from './FormCard';
-import FeatureList from './FeatureList';
+import InfoCard from '../cards/InfoCard';
+import BlackCard from '../cards/BlackCard';
+import FormCard from '../forms-cta/FormCard';
+import FeatureList from '../cards/FeatureList';
 
 type HeroProps = {
   title: string;

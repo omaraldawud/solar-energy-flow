@@ -9,7 +9,7 @@ import {
   FaSolarPanel,
 } from 'react-icons/fa';
 import solarServicesData from '../../data/solarServicesData';
-import ServiceCard from "../forms-cta-cards/ServiceCard";
+import ServiceCard from "../cards/ServiceCard";
 
 const iconMap: Record<string, JSX.Element> = {
   FaHome: <FaHome size={48} className="text-primary mb-3" />,

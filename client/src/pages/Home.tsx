@@ -1,12 +1,12 @@
 import React from 'react';
 
 //Components
-import Hero from '../components/forms-cta-cards/Hero';
+import Hero from '../components/cards/Hero';
 import HeaderTop from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import SolarServices from '../components/home/SolarServices';
 import { FAQs } from '../components/home/FAQs';
-import { HowItWorksProcess } from '../components/forms-cta-cards/HowItWorksProcess';
+import { HowItWorksProcess } from '../components/cards/HowItWorksProcess';
 
 
 //Style Sheets
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         />
 
       {/* <HowItWorks /> */}
-      <HowItWorksProcess variant="full"/>
+      <HowItWorksProcess variant="full" title='Solar Installation Process'/>
       <SolarServices />
       <FAQs />
       <Footer />

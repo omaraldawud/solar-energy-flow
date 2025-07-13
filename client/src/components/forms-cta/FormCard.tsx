@@ -1,5 +1,5 @@
 import React from 'react';
-import AirtableForm from '../forms-cta-cards/AirtableForm';
+import AirtableForm from '../forms-cta/AirtableForm';
 
 type FormCardProps = {
   cardTitle?: string;

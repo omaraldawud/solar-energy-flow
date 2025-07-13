@@ -2,7 +2,7 @@
 import { HeroMotto, MissionSection, WhoWeAreCard, CTASection } from '@/components/about';
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
-import { HowItWorksProcess } from '@/components/forms-cta-cards/HowItWorksProcess';
+import { HowItWorksProcess } from '@/components/cards/HowItWorksProcess';
 import SEO from '@/components/seo/SEO';
 
 export const AboutUsPage = () => {

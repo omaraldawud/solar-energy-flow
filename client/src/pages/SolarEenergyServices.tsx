@@ -4,7 +4,7 @@ import React from 'react';
 import HeaderTop from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import SolarServices from '../components/home/SolarServices';
-import { HowItWorksProcess } from '../components/forms-cta-cards/HowItWorksProcess';
+import { HowItWorksProcess } from '../components/cards/HowItWorksProcess';
 import { HeroMotto } from '@/components/about';
 import SEO from '@/components/seo/SEO';
 import { FAQs } from '../components/home/FAQs';

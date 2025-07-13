@@ -1,5 +1,5 @@
 import React from 'react';
-import FeatureList from './FeatureList';
+import FeatureList from '../cards/FeatureList';
 
 const InfoCard: React.FC = () => (
   <div className="p-3 rounded-4 text-dark flex-fill">

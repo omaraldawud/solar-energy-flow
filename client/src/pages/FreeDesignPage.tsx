@@ -4,9 +4,9 @@ import Header from '../components/header/Header';
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Footer from '../components/footer/Footer';
-import Hero from '@/components/forms-cta-cards/Hero';
-import PartnerBanner from '@/components/forms-cta-cards/PartnerBanner';
-import FormCard from '@/components/forms-cta-cards/FormCard';
+import Hero from '@/components/cards/Hero';
+import PartnerBanner from '@/components/cards/PartnerBanner';
+import FormCard from '@/components/forms-cta/FormCard';
 import { HeroMotto } from '@/components/about';
 
 const cardTitle = 'Free Solar System Design';
