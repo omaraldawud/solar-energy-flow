@@ -57,3 +57,13 @@ a.cta-btn:hover {
   background-color: white !important;
   color: black !important;
 }
+
+
+/* Add to CSS */
+.pulsing-text {
+  animation: pulse 2s infinite alternate;
+}
+@keyframes pulse {
+  from { text-shadow: 0 0 5px rgba(40, 167, 69, 0.3); }
+  to { text-shadow: 0 0 15px rgba(40, 167, 69, 0.7); }
+}

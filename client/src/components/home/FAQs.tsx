@@ -7,9 +7,9 @@ import {  solarFaqs,
           designFaqs, 
           SolarIncentivesFAQs, 
           SolarPanelInstallationFAQs
-      } from '../data/faqData';
+      } from '../../data/faqData';
 
-      import '../assets/css/FAQs.css'
+import '../../assets/css/FAQs.css'
 
 
 const renderFAQList = (faqs: any[]) => (

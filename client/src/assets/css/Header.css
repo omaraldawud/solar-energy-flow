@@ -20,9 +20,24 @@
 
 
 
+
 /* Hover style for main nav links */
 .nav-link:hover,
 .nav-link:focus {
   color: #FFC523 !important; /* Yellow on hover */
 }
 
+/* Official Social Colors */
+.text-instagram { color: #e40650; }
+.text-facebook { color: #1877F2; }
+.text-twitter { color: #1DA1F2; }
+.text-linkedin { color: #0077B5; }
+
+/* Hover Effects */
+.text-instagram:hover { color: #6a063f !important; }
+.text-facebook:hover { color: #0A5FCC !important; }
+.text-twitter:hover { color: #1991DA !important; }
+.text-linkedin:hover { color: #006097 !important; }
+
+/* Transition Smoothness */
+a { transition: color 0.2s ease-in-out; }

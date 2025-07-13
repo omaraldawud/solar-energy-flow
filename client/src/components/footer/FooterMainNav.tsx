@@ -2,7 +2,7 @@
 const navFooterLinksMain = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About" },
-  { href: "/#solar-servicesces", label: "Services" },
+  { href: "/solar-energy-services", label: "Services" },
   { href: "/free-solar-system-design", label: "Contact" },
 ];
 

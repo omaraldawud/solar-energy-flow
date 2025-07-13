@@ -35,6 +35,7 @@ const Header: React.FC = () => {
               </Col>
               <Row>
                 <Col>
+                
                   <a href={`tel:${COMPANY_PHONE_LINK}`}>
                     <button className="btn fs-2 text-white fw-bold d-inline-flex align-items-center">
                       <FaPhone size={40} className="me-3 text-warning" />
@@ -51,22 +52,22 @@ const Header: React.FC = () => {
             {/* Social Links Row */}
             <Row className="justify-content-end mb-2">
               <Col xs="auto">
-                <a href="https://facebook.com" className="text-white me-3">
+                <a href="https://facebook.com" className="text-facebook me-3">
                   <FaFacebook size={20} />
                 </a>
               </Col>
               <Col xs="auto">
-                <a href="https://twitter.com" className="text-white me-3">
+                <a href="https://twitter.com" className="text-twitter me-3">
                   <FaTwitter size={20} />
                 </a>
               </Col>
               <Col xs="auto">
-                <a href="https://instagram.com" className="text-white me-3">
+                <a href="https://instagram.com" className="text-instagram me-3">
                   <FaInstagram size={20} />
                 </a>
               </Col>
               <Col xs="auto">
-                <a href="https://linkedin.com" className="text-white">
+                <a href="https://linkedin.com" className="text-linkedin text-white">
                   <FaLinkedin size={20} />
                 </a>
               </Col>

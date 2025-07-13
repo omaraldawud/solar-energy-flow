@@ -24,6 +24,12 @@ const SolarServices = () => {
   return (
     <div id="solar-services" className="container my-5">
       <Row>
+        <h2 className="text-success display-5 fw-bold mb-4 position-relative">
+          <span className="pulsing-text">
+            Solar Services
+          </span>
+        </h2>
+        
         {solarServicesData.map((service) => (
           <Col key={service.id} md={4} className="mb-4">
             <ServiceCard

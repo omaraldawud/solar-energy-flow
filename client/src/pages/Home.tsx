@@ -5,7 +5,7 @@ import Hero from '../components/forms-cta-cards/Hero';
 import HeaderTop from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import SolarServices from '../components/home/SolarServices';
-import { FAQs } from '../components/FAQs';
+import { FAQs } from '../components/home/FAQs';
 import { HowItWorksProcess } from '../components/forms-cta-cards/HowItWorksProcess';
 
 
